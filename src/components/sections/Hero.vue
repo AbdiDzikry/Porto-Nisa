@@ -9,15 +9,15 @@ const emit = defineEmits(['goToSection'])
 </script>
 
 <template>
-  <section id="home" class="relative min-h-[90svh] flex items-center overflow-hidden pt-12 pb-16 md:py-20" aria-labelledby="home-heading">
-    <div class="section-container w-full">
+  <section id="home" class="relative min-h-[90svh] flex items-center overflow-hidden pt-2 sm:pt-4 pb-12 md:pb-16" aria-labelledby="home-heading">
+    <div class="section-container !pt-4 sm:!pt-6 !pb-6 w-full">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
         
         <!-- Left Column: Story Lead & Comic Headlines -->
         <div class="lg:col-span-7 flex flex-col items-start">
           
           <!-- Webtoon Dialogue Speech Bubble (Availability) -->
-          <div class="speech-bubble mb-6 max-w-lg inline-flex items-center gap-3 bg-[var(--surface-panel)] border-[1.5px] border-[var(--comic-border)] shadow-comic">
+          <div class="speech-bubble mb-3 sm:mb-4 max-w-lg inline-flex items-center gap-3 bg-[var(--surface-panel)] border-[1.5px] border-[var(--comic-border)] shadow-comic">
             <span class="w-2.5 h-2.5 rounded-full bg-[var(--brand-mint)] border border-[var(--comic-border)] shrink-0 animate-pulse"></span>
             <span class="font-sans text-xs sm:text-sm font-bold text-[var(--ink-primary)]">
               {{ c.availabilityStatus }}
