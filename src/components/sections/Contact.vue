@@ -183,7 +183,7 @@ onUnmounted(() => {
               <div class="w-8 h-8 rounded-lg bg-[var(--surface-subtle)] border border-[var(--comic-border)] flex items-center justify-center shrink-0 text-sky-600">
                 <Linkedin class="w-4 h-4" />
               </div>
-              <span class="font-bold text-sm text-[var(--ink-primary)]">LinkedIn Profile (annisamaulanasabilla)</span>
+              <span class="font-bold text-sm text-[var(--ink-primary)]">LinkedIn Profile (Annisa Maulana Sabilla)</span>
             </div>
             <ArrowUpRight class="w-4 h-4 text-[var(--ink-muted)] shrink-0" />
           </a>
