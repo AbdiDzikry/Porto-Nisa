@@ -145,24 +145,30 @@ const goToSection = (id) => {
 // -----------------------------------------------------------------
 // Intersection Observer for Active Navigation
 // -----------------------------------------------------------------
-let observer = null
-const initIntersectionObserver = () => {
-  const sections = ['home', 'about', 'works', 'briefs', 'skills', 'experience', 'contact']
-  observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          activeSection.value = entry.target.id
-        }
-      })
-    },
-    { threshold: 0.35, rootMargin: '-80px 0px 0px 0px' }
-  )
+const updateActiveSection = () => {
+  const sections = ['home', 'about', 'works', 'skills', 'experience', 'contact']
+  const scrollPosition = window.scrollY + 180
+  let current = 'home'
 
-  sections.forEach((secId) => {
+  for (const secId of sections) {
     const el = document.getElementById(secId)
-    if (el) observer.observe(el)
-  })
+    if (el) {
+      if (scrollPosition >= el.offsetTop) {
+        current = secId
+      }
+    }
+  }
+
+  if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 60) {
+    current = 'contact'
+  }
+
+  activeSection.value = current
+}
+
+const initIntersectionObserver = () => {
+  window.addEventListener('scroll', updateActiveSection, { passive: true })
+  updateActiveSection()
 }
 
 // -----------------------------------------------------------------
@@ -225,10 +231,7 @@ onUnmounted(() => {
     lenis = null
   }
   gsap.ticker.remove(lenisTicker)
-  if (observer) {
-    observer.disconnect()
-    observer = null
-  }
+  window.removeEventListener('scroll', updateActiveSection)
   if (mediaQuery) {
     if (mediaQuery.removeEventListener) mediaQuery.removeEventListener('change', onSchemeChange)
     else mediaQuery.removeListener(onSchemeChange)
