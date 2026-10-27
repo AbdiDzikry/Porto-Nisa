@@ -31,7 +31,7 @@ const updateJakartaTime = () => {
 
 const copyEmailToClipboard = async () => {
   try {
-    const targetEmail = props.profile?.contactActions?.emailValue || 'sulthanabdi1@gmail.com'; await navigator.clipboard.writeText(targetEmail)
+    const targetEmail = props.profile?.contactActions?.emailValue || 'annisa.m.sabilla@gmail.com'; await navigator.clipboard.writeText(targetEmail)
     emailCopied.value = true
     setTimeout(() => {
       emailCopied.value = false
@@ -47,7 +47,7 @@ const handleFormSubmit = () => {
 
   formStatus.value = 'sending'
 
-  const targetEmail = props.profile?.contactActions?.emailValue || 'sulthanabdi1@gmail.com'
+  const targetEmail = props.profile?.contactActions?.emailValue || 'annisa.m.sabilla@gmail.com'
   const subjectText = `Inquiry / Diskusi Projek dari ${formState.value.name.trim()}`
   const bodyText = `Halo,\n\nNama: ${formState.value.name.trim()}\nEmail: ${formState.value.email.trim()}\n\nPesan / Kebutuhan Projek:\n${formState.value.message.trim()}\n\n---\nDikirim dari Formulir Portfolio`
 
@@ -174,7 +174,7 @@ onUnmounted(() => {
 
           <!-- GitHub Profile -->
           <a
-            :href="`https://${profile.contactActions.githubValue || 'github.com/AbdiDzikry'}`"
+            :href="`https://${profile.contactActions.githubValue || 'annisamsabilla.netlify.app'}`"
             target="_blank"
             rel="noreferrer"
             class="comic-panel p-3 bg-[var(--surface-panel)] border-[1.5px] border-[var(--comic-border)] hover:border-[var(--brand-coral)] flex items-center justify-between transition-all"
@@ -183,14 +183,14 @@ onUnmounted(() => {
               <div class="w-8 h-8 rounded-lg bg-[var(--surface-subtle)] border border-[var(--comic-border)] flex items-center justify-center shrink-0 text-[var(--ink-primary)]">
                 <Github class="w-4 h-4" />
               </div>
-              <span class="font-bold text-sm text-[var(--ink-primary)]">GitHub Profile (@AbdiDzikry)</span>
+              <span class="font-bold text-sm text-[var(--ink-primary)]">GitHub Profile (Annisa Maulana)</span>
             </div>
             <ArrowUpRight class="w-4 h-4 text-[var(--ink-muted)] shrink-0" />
           </a>
 
           <!-- LinkedIn -->
           <a
-            href="https://linkedin.com/in/sulthan-abdi-dzikry"
+            href="https://linkedin.com/in/annisamaulanasabilla"
             target="_blank"
             rel="noreferrer"
             class="comic-panel p-3 bg-[var(--surface-panel)] border-[1.5px] border-[var(--comic-border)] hover:border-[var(--brand-coral)] flex items-center justify-between transition-all"
@@ -199,7 +199,7 @@ onUnmounted(() => {
               <div class="w-8 h-8 rounded-lg bg-[var(--surface-subtle)] border border-[var(--comic-border)] flex items-center justify-center shrink-0 text-sky-600">
                 <Linkedin class="w-4 h-4" />
               </div>
-              <span class="font-bold text-sm text-[var(--ink-primary)]">LinkedIn Profile (sulthan-abdi-dzikry)</span>
+              <span class="font-bold text-sm text-[var(--ink-primary)]">LinkedIn Profile (annisamaulanasabilla)</span>
             </div>
             <ArrowUpRight class="w-4 h-4 text-[var(--ink-muted)] shrink-0" />
           </a>

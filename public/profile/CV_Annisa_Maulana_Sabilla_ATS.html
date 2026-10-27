@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Annisa Maulana Sabilla - Sistem Informasi Kelautan & Web Developer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Calibri', 'Arial', sans-serif;
+            font-size: 9.1pt;
+            line-height: 1.24;
+            color: #000000;
+            background: #ffffff;
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 7mm 10.5mm;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 5px;
+            border-bottom: 2px solid #000000;
+            padding-bottom: 4px;
+        }
+
+        .name {
+            font-size: 16.5pt;
+            font-weight: bold;
+            letter-spacing: 0.8px;
+            margin-bottom: 2px;
+        }
+
+        .title {
+            font-size: 9.8pt;
+            color: #1a1a1a;
+            font-weight: 600;
+            margin-bottom: 3px;
+        }
+
+        .contact {
+            font-size: 8.4pt;
+            color: #333333;
+        }
+
+        .contact span {
+            margin: 0 4px;
+        }
+
+        .contact a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 5px;
+        }
+
+        .section-title {
+            font-size: 9.3pt;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-bottom: 1px solid #000000;
+            padding-bottom: 1px;
+            margin-bottom: 3px;
+            letter-spacing: 0.5px;
+            page-break-after: avoid;
+            break-after: avoid;
+        }
+
+        /* Experience & Projects */
+        .entry {
+            margin-bottom: 4px;
+            page-break-inside: avoid;
+            break-inside: avoid;
+        }
+
+        .entry-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            margin-bottom: 1px;
+        }
+
+        .entry-title {
+            font-weight: bold;
+            font-size: 9.1pt;
+        }
+
+        .entry-company {
+            font-style: italic;
+            font-size: 8.6pt;
+            margin-bottom: 1px;
+        }
+
+        .entry-date {
+            font-size: 8.6pt;
+            color: #333333;
+            font-weight: 600;
+        }
+
+        .entry-details {
+            margin-left: 0;
+            padding-left: 14px;
+        }
+
+        .entry-details li {
+            margin-bottom: 1.5px;
+            text-align: justify;
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 140px 1fr;
+            gap: 2px 8px;
+            font-size: 8.6pt;
+        }
+
+        .skill-category {
+            font-weight: bold;
+        }
+
+        .skill-items {
+            text-align: left;
+        }
+
+        /* Certifications List */
+        .cert-list {
+            margin-left: 0;
+            padding-left: 14px;
+            font-size: 8.6pt;
+        }
+
+        .cert-list li {
+            margin-bottom: 1.5px;
+            text-align: justify;
+        }
+
+        @media print {
+            body {
+                padding: 6mm 9mm;
+            }
+
+            .contact a {
+                color: #0056b3;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <h1 class="name">ANNISA MAULANA SABILLA</h1>
+        <p class="title">Marine Information Systems Specialist | Web &amp; Spatial Data Developer</p>
+        <p class="contact">
+            <span>Bekasi, Jawa Barat, Indonesia</span> |
+            <span><a href="mailto:annisa.m.sabilla@gmail.com">annisa.m.sabilla@gmail.com</a></span> |
+            <span><a href="https://wa.me/6281934179793" target="_blank">+6281934179793</a></span>
+        </p>
+        <p class="contact">
+            <a href="https://linkedin.com/in/annisamaulanasabilla" target="_blank">linkedin.com/in/annisamaulanasabilla</a> |
+            <a href="https://annisamsabilla.netlify.app" target="_blank">annisamsabilla.netlify.app</a>
+        </p>
+    </header>
+
+    <!-- Professional Summary -->
+    <section class="section">
+        <h2 class="section-title">Ringkasan Profesional</h2>
+        <p style="text-align: justify; font-size: 8.8pt;">
+            Lulusan Sistem Informasi Kelautan Universitas Pendidikan Indonesia dengan keahlian terintegrasi di bidang analisis data spasial (GIS), digitalisasi proses, manajemen arsip korporat, dan rekayasa web modern (React.js, JavaScript, Tailwind CSS). Berpengalaman menangani otomatisasi komponen permesinan menggunakan VBA Macro di PT Astra Honda Motor, tata kelola kearsipan digital &amp; HRIS di PT Pelindo (Persero), visualisasi statistik di BPS, serta meraih Top 10 Best Project melalui platform WebGIS prediksi zona potensi perikanan berbasis Machine Learning.
+        </p>
+    </section>
+
+    <!-- Work & Internship Experience -->
+    <section class="section">
+        <h2 class="section-title">Pengalaman Kerja &amp; Magang</h2>
+
+        <!-- Pelindo -->
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">Archive &amp; HRIS Administration Intern (Magenta Program BUMN)</span>
+                <span class="entry-date">Jan 2026 – Agu 2026</span>
+            </div>
+            <div class="entry-company">PT Pelabuhan Indonesia (Persero) | Jakarta / Bekasi, Indonesia</div>
+            <ul class="entry-details">
+                <li>Ditempatkan di Departemen Manajemen Kearsipan, HRIS, dan Administrasi SDM untuk merestrukturisasi dan mengklasifikasikan 1.000+ dokumen arsip inaktif perusahaan sesuai standar retensi korporat.</li>
+                <li>Melakukan validasi entri data digital dan verifikasi kepatuhan berkas kepegawaian guna memangkas waktu pencarian dokumen audit secara signifikan.</li>
+            </ul>
+        </div>
+
+        <!-- BPS -->
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">Design and Spatial Data Intern</span>
+                <span class="entry-date">Okt 2025 – Des 2025</span>
+            </div>
+            <div class="entry-company">Badan Pusat Statistik (BPS) Kabupaten Bekasi | Jawa Barat, Indonesia</div>
+            <ul class="entry-details">
+                <li>Mendukung pemrosesan, agregasi, dan validasi data sensus serta statistik regional melalui integrasi platform internal MATCHAPRO.</li>
+                <li>Merancang materi publikasi data resmi (infografis &amp; poster analitis) untuk mendiseminasikan data demografi daerah kepada instansi pemerintah dan publik.</li>
+            </ul>
+        </div>
+
+        <!-- PT Alfatih -->
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">Web Development Consultant (Consulting Project)</span>
+                <span class="entry-date">Sep 2025 – Des 2025</span>
+            </div>
+            <div class="entry-company">PT Alfatih Pilar Peradaban | Indonesia</div>
+            <ul class="entry-details">
+                <li>Memimpin perancangan dan implementasi website company profile dari nol menggunakan React.js, Tailwind CSS, dan Swiper.js guna memperkuat branding digital perusahaan mitra.</li>
+                <li>Mengembangkan arsitektur komponen frontend yang modular, responsif lintas gawai (mobile-first), dan mengintegrasikan form kontak langsung.</li>
+            </ul>
+        </div>
+
+        <!-- AHM -->
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">Data &amp; Digitalization Intern - Quality Control Department</span>
+                <span class="entry-date">2024 / 2025</span>
+            </div>
+            <div class="entry-company">PT Astra Honda Motor (AHM) | Cikarang / Karawang, Indonesia</div>
+            <ul class="entry-details">
+                <li>Mengembangkan modul otomasi perhitungan dan rekapitulasi data inspeksi komponen machining menggunakan Excel VBA Macro, meningkatkan akurasi data QC.</li>
+                <li>Mendukung digitalisasi pencatatan data cacat dan laporan analitis harian divisi Quality Control secara terstruktur.</li>
+            </ul>
+        </div>
+
+        <!-- Supernova -->
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">HRGA Administration Intern</span>
+                <span class="entry-date">Jan 2020 – Mei 2020</span>
+            </div>
+            <div class="entry-company">PT Supernova Flexible Packaging | Cikarang, Indonesia</div>
+            <ul class="entry-details">
+                <li>Mengelola database kehadiran tenaga kerja, penyusunan surat-menyurat operasional, serta kearsipan berkas ketenagakerjaan divisi HRGA.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Key Projects -->
+    <section class="section">
+        <h2 class="section-title">Portofolio &amp; Proyek Unggulan</h2>
+
+        <!-- WebGIS Soulafish -->
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">WebGIS SOULAFISH — Lampung Selatan Fish &amp; Chlorophyll Prediction</span>
+                <span class="entry-date">React.js, Leaflet.js, ArcGIS, Random Forest, Chart.js</span>
+            </div>
+            <ul class="entry-details">
+                <li>Membangun platform sistem informasi geografis kelautan interaktif yang mengolah citra suhu permukaan laut (SPL) dan konsentrasi klorofil-a dengan algoritma Random Forest untuk memprediksi zona potensi tangkapan ikan.</li>
+                <li>Meraih <strong>Top 10 Finalis Kompetisi Inovasi Teknologi &amp; Maritim</strong> tingkat kampus melalui implementasi visualisasi peta interaktif Leaflet.js dan fitur ekspor data analitis CSV.</li>
+            </ul>
+        </div>
+
+        <!-- Guardian Of The Sea -->
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">Guardian Of The Sea (Gotss) — Marine Conservation Platform (UI/UX)</span>
+                <span class="entry-date">Figma, Mobile-First Design, User Flow, Prototyping</span>
+            </div>
+            <ul class="entry-details">
+                <li>Merancang prototipe mobile interaktif berfokus pada pelestarian laut: pemetaan Trash-Sea lokasi pencemaran, Citizen Science Hub untuk pelaporan warga, serta edukasi konservasi lingkungan laut.</li>
+            </ul>
+        </div>
+
+        <!-- Desktop School Admin -->
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">Sistem Informasi Administrasi Sekolah &amp; Payroll Terintegrasi</span>
+                <span class="entry-date">VB.NET, MySQL, Crystal Reports, ODBC Connector</span>
+            </div>
+            <ul class="entry-details">
+                <li>Membangun aplikasi desktop Windows berbasis arsitektur database relasional untuk otomatisasi pembayaran SPP siswa, penggajian guru multi-role, dan pencetakan slip laporan periodik.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section">
+        <h2 class="section-title">Pendidikan Formal</h2>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">Sarjana Komputer / Sarjana Sains — Sistem Informasi Kelautan</span>
+                <span class="entry-date">2022 – 2026</span>
+            </div>
+            <div class="entry-company">Universitas Pendidikan Indonesia (UPI) | Serang / Bandung, Indonesia</div>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">SMK — Rekayasa Perangkat Lunak (RPL)</span>
+                <span class="entry-date">2018 – 2021</span>
+            </div>
+            <div class="entry-company">Sekolah Menengah Kejuruan | Indonesia</div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section">
+        <h2 class="section-title">Keahlian &amp; Penguasaan Teknologi</h2>
+        <div class="skills-grid">
+            <span class="skill-category">GIS &amp; Data Spasial:</span>
+            <span class="skill-items">ArcGIS, Leaflet.js, Spatial Data Processing, Remote Sensing Analysis, Coordinates JSON</span>
+
+            <span class="skill-category">Web Development:</span>
+            <span class="skill-items">React.js, JavaScript (ES6+), HTML5, Tailwind CSS, Leaflet.js, Swiper.js, Chart.js, Git/GitHub</span>
+
+            <span class="skill-category">Automation &amp; Data:</span>
+            <span class="skill-items">Microsoft Excel (VBA Macro &amp; Advanced Formulas), MySQL Database, Crystal Reports</span>
+
+            <span class="skill-category">UI/UX &amp; Tools:</span>
+            <span class="skill-items">Figma (Prototyping &amp; Design System), Canva, VS Code, MATCHAPRO</span>
+
+            <span class="skill-category">Bahasa:</span>
+            <span class="skill-items">Bahasa Indonesia (Native), Bahasa Inggris (Dasar - Menengah)</span>
+        </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="section">
+        <h2 class="section-title">Sertifikasi Kompetensi &amp; Pelatihan</h2>
+        <ul class="cert-list">
+            <li><strong>IT Software Programming for Business</strong> — Balai Besar Pelatihan Vokasi dan Produktivitas (BBPVP) Bekasi — <strong>Tersertifikasi Kompetensi BNSP</strong> (Mar 2022 – Jun 2022).</li>
+        </ul>
+    </section>
+</body>
+
+</html>

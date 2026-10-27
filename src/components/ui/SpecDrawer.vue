@@ -151,24 +151,14 @@ const monogramFor = (title) => {
           <!-- Action Buttons -->
           <div class="mt-4 flex flex-col sm:flex-row gap-3 pt-4 border-t-2 border-[var(--comic-border)] shrink-0">
             <a
-              v-if="activeProject.liveUrl"
-              :href="activeProject.liveUrl"
+              :href="activeProject.detailUrl || activeProject.link || activeProject.liveUrl"
               target="_blank"
               rel="noreferrer"
-              class="btn-comic-primary flex-1 py-3 text-center"
+              class="btn-comic-primary flex-1 py-3 text-center cursor-pointer shadow-[2px_2px_0px_var(--comic-border)] hover:translate-y-[-1px]"
             >
-              <span>{{ c.drawerLiveSite || 'Live Site' }}</span>
-              <ArrowUpRight class="w-4 h-4 ml-1" aria-hidden="true" />
-            </a>
-            <a
-              v-if="activeProject.link && activeProject.link !== activeProject.liveUrl"
-              :href="activeProject.link"
-              target="_blank"
-              rel="noreferrer"
-              class="btn-comic-secondary flex-1 py-3 text-center"
-            >
-              <span>{{ c.drawerViewSource || 'View Source' }}</span>
-              <ArrowUpRight class="w-4 h-4 ml-1" aria-hidden="true" />
+              <BookOpen class="w-4 h-4 mr-1.5 inline" aria-hidden="true" />
+              <span>Cek Detail Projek</span>
+              <ArrowUpRight class="w-4 h-4 ml-1 inline" aria-hidden="true" />
             </a>
           </div>
         </div>

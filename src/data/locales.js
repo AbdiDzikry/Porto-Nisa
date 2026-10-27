@@ -3,9 +3,9 @@ export const copy = {
     skip: 'Lewati ke konten utama',
     issue: 'Portofolio Digitalisasi & Rekayasa Sistem',
     eyebrow: 'IT Support & Digitalization Engineer',
-    coverHeadline: ['Sulthan Abdi;', 'Software & Digitalization Engineer'],
+    coverHeadline: ['Annisa Maulana;', 'Marine Information Systems & Spatial Web Specialist'],
     coverBody:
-      'Lulusan Teknik Informatika Telkom University (IPK 3.52) yang berpengalaman mendigitalkan proses manufaktur Smart Factory (WMS & Quality Management Systems) dan membangun sistem korporat yang digunakan 1.000+ pengguna lintas departemen di Dharma Group.',
+      'Lulusan Sistem Informasi Kelautan UPI dengan keahlian terintegrasi di bidang analisis data spasial (GIS), digitalisasi proses kearsipan BUMN (Pelindo), otomatisasi data inspeksi di PT Astra Honda Motor, serta rekayasa web modern (React.js & Leaflet).',
     ctaView: 'Lihat Proyek Saya',
     ctaContact: 'Hubungi Saya',
     ctaDownloadCv: 'Unduh CV Lengkap',
@@ -29,23 +29,23 @@ export const copy = {
     cmdToggleTheme: 'Ganti Tema (Retro / Soft / Memphis)',
     cmdToggleLang: 'Ganti Bahasa (ID/EN)',
     quickStatsGpa: 'IPK 3.52 / 4.00 (Telkom University)',
-    quickStatsPkg: '1.000+ Pengguna Aktif (Sistem Korporat)',
+    quickStatsPkg: 'Top 10 Finalis Inovasi Maritim & BNSP',
     quickStatsRole: 'IT Support & Digitalization',
 
     aboutTitle: 'Mengenal saya lebih dekat.',
     aboutBodyP1:
-      'Saya adalah Software & Digitalization Engineer berlatar belakang S1 Teknik Informatika Telkom University. Keseharian saya berfokus pada digitalisasi proses manufaktur industri (Smart Factory), integrasi WMS, sistem pelacakan rantai pasok (supply chain tracking), hingga portal manajemen kualitas (Digital PICA).',
+      'Saya adalah praktisi Sistem Informasi Kelautan berlatar belakang S1 dari Universitas Pendidikan Indonesia (UPI) dan SMK Rekayasa Perangkat Lunak. Fokus utama saya adalah menjembatani analisis data spasial (GIS), digitalisasi administrasi korporat, serta pembangunan aplikasi web interaktif yang menyelesaikan tantangan nyata di sektor maritim dan industri.',
     aboutBodyP2:
-      'Berbekal sertifikasi Junior Web Developer dari BNSP dan pemahaman mendalam tentang kebutuhan operasional pabrik, saya merancang sistem yang reliabel, mudah digunakan operator di lantai produksi, serta mendukung efisiensi manajemen.',
+      'Berbekal sertifikasi kompetensi IT Software Programming for Business dari BNSP serta rekam jejak magang di PT Pelabuhan Indonesia (Persero), BPS, dan PT Astra Honda Motor, saya terbiasa menghasilkan solusi berbasis data yang akurat, sistematis, dan user-friendly.',
     aboutPullQuote: '“Teknologi terbaik adalah yang menyederhanakan alur kerja kompleks dan memberi dampak nyata di lantai produksi.”',
     
     highlightsTitle: 'Sekilas Tentang Saya',
     highlightsBadge: 'PROFIL',
     highlights: [
       { label: 'Pendidikan', value: 'S1 Teknik Informatika — Telkom University (IPK 3.52)' },
-      { label: 'Fokus Utama', value: 'Smart Factory, WMS, Quality Portal & Full-Stack Web' },
-      { label: 'Sertifikasi', value: 'BNSP Junior Web Developer & Google Skillshop' },
-      { label: 'Pengalaman Industri', value: 'PT Dharma Controlcable Ind & PT Dharma Polimetal Tbk.' }
+      { label: 'Fokus Utama', value: 'Marine GIS, Spatial Analytics, Corporate Archiving & Web Dev' },
+      { label: 'Sertifikasi', value: 'BNSP IT Software Programming for Business' },
+      { label: 'Pengalaman Industri', value: 'PT Pelindo (Persero), BPS Kab. Bekasi, PT Astra Honda Motor' }
     ],
 
     worksTitle: 'Proyek Pilihan & Digitalisasi Manufaktur',
@@ -56,7 +56,7 @@ export const copy = {
     moreProjectsCta: 'Kembali ke Portofolio Utama',
     moreProjectsTag: 'Portofolio Utama',
     moreProjectsRole: 'Arsitektur & Dokumentasi Lengkap',
-    moreProjectsListMeta: 'Sulthan Abdi Dzikry • Case Studies & Interactive Showcase',
+    moreProjectsListMeta: 'Annisa Maulana Sabilla • Case Studies & Interactive Showcase',
     moreProjectsPreviewSub: 'Eksplorasi Studi Kasus Lengkap ↗',
     
     skillsTitle: 'Teknologi & Keahlian yang Biasa Digunakan',
@@ -133,9 +133,9 @@ export const copy = {
     skip: 'Skip to main content',
     issue: 'Engineering & Digitalization Log',
     eyebrow: 'IT Support & Digitalization Engineer',
-    coverHeadline: ['Sulthan Abdi;', 'Software & Digitalization Engineer'],
+    coverHeadline: ['Annisa Maulana;', 'Marine Information Systems & Spatial Web Specialist'],
     coverBody:
-      'Informatics Engineering graduate from Telkom University (GPA 3.52) with hands-on experience in Smart Factory digitalization (WMS & Quality Management Systems) and enterprise portals serving 1,000+ cross-department users at Dharma Group.',
+      'Marine Information Systems graduate from Universitas Pendidikan Indonesia (UPI) specializing in spatial data engineering (GIS), digital archiving at Pelindo, QC automation at Astra Honda Motor, and modern web application development.',
     ctaView: 'Explore Projects',
     ctaContact: 'Contact Me',
     ctaDownloadCv: 'Download Full CV',
@@ -159,7 +159,7 @@ export const copy = {
     cmdToggleTheme: 'Toggle Theme (Retro / Soft / Memphis)',
     cmdToggleLang: 'Switch Language (EN/ID)',
     quickStatsGpa: 'GPA 3.52 / 4.00 (Telkom University)',
-    quickStatsPkg: '1,000+ Active Users (Enterprise Systems)',
+    quickStatsPkg: 'Top 10 Maritime Innovation & BNSP',
     quickStatsRole: 'IT Support & Digitalization',
 
     aboutTitle: 'Getting to know me better.',
@@ -175,7 +175,7 @@ export const copy = {
       { label: 'Education', value: 'B.S. Informatics Engineering — Telkom University (GPA 3.52)' },
       { label: 'Core Focus', value: 'Smart Factory, WMS, Quality Portals & Full-Stack Web' },
       { label: 'Certification', value: 'BNSP Junior Web Developer & Google Skillshop' },
-      { label: 'Industry Experience', value: 'PT Dharma Controlcable Ind & PT Dharma Polimetal Tbk.' }
+      { label: 'Industry Experience', value: 'PT Pelindo (Persero), BPS Bekasi, PT Astra Honda Motor' }
     ],
 
     worksTitle: 'Featured Projects & Industrial Digitalization',
@@ -186,7 +186,7 @@ export const copy = {
     moreProjectsCta: 'Back to Primary Portfolio',
     moreProjectsTag: 'Primary Portfolio',
     moreProjectsRole: 'Full Architecture & Showcases',
-    moreProjectsListMeta: 'Sulthan Abdi Dzikry • Case Studies & Interactive Showcase',
+    moreProjectsListMeta: 'Annisa Maulana Sabilla • Case Studies & Interactive Showcase',
     moreProjectsPreviewSub: 'Explore Case Studies ↗',
     
     skillsTitle: 'Technologies & Technical Arsenal',

@@ -1,0 +1,26 @@
+Company Profile PT Alfatih Pilar Peradaban
+Created on October 2024 by Annisa Maulana Sabilla · Last Updated on December 2024
+
+Alfatih Project
+🔗 Repository & Live Site
+Repository
+Open Live Site
+📝 Overview
+Sebagai mahasiswa dalam mata kuliah Proyek Konsultasi, saya berkesempatan bermitra dengan PT. Alfatih Pilar Peradaban. Perusahaan ini belum memiliki platform digital resmi, dan saya mengambil peran penting dalam merancang serta membangun website company profile mereka dari nol.
+
+🛠️ The Tech Stack
+React.js: Membangun antarmuka pengguna interaktif dan modern.
+Tailwind CSS: Styling cepat dan responsif dengan utility-first framework.
+Swiper.js: Menambahkan komponen slider untuk tampilan yang dinamis.
+✨ Features
+🔸 Navbar: Menu navigasi intuitif (Home, About, Our Service, Project & Clients, Contact).
+🔸 Home: Halaman pembuka yang menyambut pengguna dengan slideshow dan intro perusahaan.
+🔸 About: Penjelasan sejarah, visi-misi, dan nilai perusahaan.
+🔸 Our Service: Menampilkan beragam layanan dengan dropdown interaktif.
+🔸 Project & Clients: Galeri proyek dan klien yang telah bekerja sama.
+🔸 Contact: Formulir yang memudahkan komunikasi langsung.
+🔸 Footer: Informasi sosial media dan alamat resmi perusahaan.
+🧠 Kesimpulan
+Proyek ini tidak hanya menambah pengalaman saya dalam dunia pengembangan web, tetapi juga memberikan kontribusi nyata terhadap branding digital perusahaan mitra.
+
+Jika kamu ingin mencoba langsung websitenya, ini link demo-nya link ini!

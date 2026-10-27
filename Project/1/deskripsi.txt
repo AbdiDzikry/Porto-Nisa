@@ -1,0 +1,28 @@
+WEBGIS SOULAFISH (South Lampung Fish & Chlorophyll Insight )
+Created on December 2024 by Annisa Maulana Sabilla · Last Updated on December 2024
+
+Soulafish Project
+🔗 Repository & Live Site
+Repository
+Open Live Site
+📝 Overview
+SoulaFish adalah platform WebGIS interaktif yang dikembangkan untuk membantu nelayan, peneliti, dan pemangku kepentingan perikanan dalam mengidentifikasi lokasi penangkapan ikan yang potensial di wilayah Lampung Selatan. Website ini mengintegrasikan data suhu permukaan laut (SPL) dan konsentrasi klorofil-a menggunakan hasil analisis spasial berbasis machine learning (Random Forest) untuk memberikan informasi berbasis data yang akurat dan mudah dipahami.
+
+🛠️ The Tech Stack
+React.js: Membangun antarmuka pengguna interaktif dan modern.
+Tailwind CSS: Styling cepat dan responsif dengan utility-first framework.
+Leaflet.js: Library Java Script untuk menampilkan peta dan pop up interaktif.
+ArcGIS: Software yang digunakan untuk mengolah dan menganalisis data suhu serta data klorofil untuk menentukan area potensial.
+Random Forest:
+Koordinat JSON: Format Data Spasial yang berisi informasi koordinat geografis area potensial.
+Chart.Js: Tools untuk mennghasilkan grafik yang digunakan untuk data dan informasi.
+✨ Features
+🔸 Navbar: Menu navigasi (Home, Maps, Data & Information, About).
+🔸 Maps: Peta Interaktif untuk menampilkan wilayah potensial yang dilengkapi marker dan pop up berdasarkan analisis suhu & klorofil
+🔸 Data Information: Sebuah menu Visualisasi Data yang menyajikan Grafik Interaktif
+🔸 About: Menampilkan Sejarah dibagun-nya website soulafish dan menjelaskan background Logo
+🔸 Unduh CSV: Untuk mengunduh data potensial yang telah dilakukan dalam bentuk CSV (Excel)
+🧠 Kesimpulan
+royek ini memperkuat pengalaman saya di bidang pengembangan web dan data spasial, serta berhasil meraih Top 10 Best Project dalam Perlombaan tingkat Kampus.
+
+Jika kamu ingin mencoba langsung websitenya, ini link demo-nya link ini!

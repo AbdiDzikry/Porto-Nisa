@@ -1,232 +1,204 @@
 const careerProfileSource = {
   id: {
-    heroLabel: 'Perjalanan Karir',
-    heroTitle: 'Membangun ekosistem digital manufaktur nyata & sistem korporat teruji.',
+    heroLabel: 'Perjalanan Profesional & Keahlian',
+    heroTitle: 'Mengintegrasikan Sistem Informasi Kelautan, Data Spasial GIS, & Pengembangan Web Modern.',
     heroSummary:
-      'Lulusan S1 Teknik Informatika Telkom University (IPK 3.52) dengan rekam jejak terbukti dalam digitalisasi manufaktur di Dharma Group (PT Dharma Controlcable Indonesia & PT Dharma Polimetal Tbk.). Berpengalaman membangun Smart Factory WMS, portal Quality PICA, sistem reservasi ruang rapat skala korporat (1.000+ pengguna), serta memiliki sertifikasi kompetensi Junior Web Developer dari BNSP.',
+      'Lulusan Sistem Informasi Kelautan Universitas Pendidikan Indonesia (UPI) dengan pengalaman komprehensif di bidang rekayasa data spasial, kearsipan korporat & HRIS di PT Pelindo (Persero), otomasi data QC di PT Astra Honda Motor, serta pengolahan statistik di BPS. Memiliki sertifikasi resmi BNSP di bidang IT Software Programming for Business.',
     quickFactsLabel: 'Fakta Singkat',
     quickFacts: [
-      'S1 Teknik Informatika, Telkom University (IPK 3.52/4.00)',
-      '1.000+ Pengguna Aktif di Sistem Korporat Dharma Group',
-      'Junior Web Developer Tersertifikasi BNSP (2025 - 2028)'
+      'S1 Sistem Informasi Kelautan, Universitas Pendidikan Indonesia (2022 - 2026)',
+      'Tersertifikasi Kompetensi BNSP: IT Software Programming for Business',
+      'Pengalaman Magang Lintas BUMN (Pelindo), Industri Manufaktur (AHM), & Instansi Pemerintah (BPS)'
     ],
     contactActions: {
       emailLabel: 'Email',
-      emailValue: 'sulthanabdi1@gmail.com',
+      emailValue: 'annisa.m.sabilla@gmail.com',
       linkedinLabel: 'LinkedIn',
-      linkedinValue: 'linkedin.com/in/sulthan-abdi-dzikry',
-      githubLabel: 'Portofolio Utama',
-      githubValue: 'Kembali ke Beranda Utama',
-      githubUrl: '/',
-      meetingLabel: 'Jadwalkan Diskusi',
-      meetingValue: 'sulthanabdi1@gmail.com',
-      meetingUrl: 'mailto:sulthanabdi1@gmail.com',
-      portfolioValue: 'sulthanabdi.dev'
+      linkedinValue: 'linkedin.com/in/annisamaulanasabilla',
+      githubLabel: 'Portofolio Online',
+      githubValue: 'annisamsabilla.netlify.app',
+      githubUrl: 'https://annisamsabilla.netlify.app',
+      meetingLabel: 'Kirim Email Langsung',
+      meetingValue: 'annisa.m.sabilla@gmail.com',
+      meetingUrl: 'mailto:annisa.m.sabilla@gmail.com',
+      portfolioValue: 'annisamsabilla.netlify.app'
     },
-    timelineLabel: 'Linimasa Pengalaman',
+    timelineLabel: 'Pengalaman Kerja & Magang',
     timelineItems: [
       {
-        period: 'Agu. 2026 – Okt. 2026',
-        title: 'IT Support & Digitalization',
-        role: 'PT Dharma Controlcable Indonesia (DCI)',
+        period: 'Jan. 2026 – Agu. 2026',
+        title: 'Archive & HRIS Administration Intern (Magenta BUMN)',
+        role: 'PT Pelabuhan Indonesia (Persero)',
         description:
-          'Mengembangkan ekosistem Smart Factory: modul AIS Backend (WMS, Bin Allocation, SAP RFC integration), Digital PICA untuk manajemen mutu terintegrasi, dan Customer Order Tracking delivery note real-time.',
-        technologies: ['Laravel 8', 'React 18', 'Next.js', 'MongoDB', 'SAP RFC', 'Tailwind CSS'],
-        impact: 'Smart Factory Ecosystem & Real-time Tracking'
+          'Ditempatkan di Departemen Manajemen Kearsipan, HRIS, dan Administrasi SDM. Bertanggung jawab atas verifikasi, digitalisasi, dan klasifikasi sistematis 1.000+ dokumen arsip inaktif perusahaan sesuai regulasi retensi BUMN.',
+        technologies: ['HRIS', 'Document Management', 'Digital Archiving', 'Data Verification'],
+        impact: 'Tertatanya 1.000+ Arsip Digital & Efisiensi Pencarian Dokumen SDM'
       },
       {
-        period: 'Okt. 2025 – Apr. 2026',
-        title: 'IT Support & Digitalization',
-        role: 'PT Dharma Polimetal Tbk.',
+        period: 'Okt. 2025 – Des. 2025',
+        title: 'Design & Spatial Data Intern',
+        role: 'Badan Pusat Statistik (BPS) Kabupaten Bekasi',
         description:
-          'Merancang & merilis sistem DOORS (Meeting Room Booking) yang melayani 1.000+ pengguna dan 14 ruang rapat tanpa konflik jadwal. Revamp sistem HRMS (+50% peningkatan utilisasi), laporan digital QC LMK, serta monitoring hazard lingkungan kerja.',
-        technologies: ['PHP', 'Laravel', 'MySQL', 'PWA', 'Figma', 'SUS Testing'],
-        impact: '1.000+ Pengguna Aktif & Zero Scheduling Conflict'
+          'Mendukung agregasi, validasi data statistik regional, dan visualisasi data demografi via platform MATCHAPRO, serta merancang publikasi visual resmi berkala.',
+        technologies: ['MATCHAPRO', 'Data Visualization', 'Canva', 'Infographics', 'Spreadsheet'],
+        impact: 'Diseminasi Data Statistik Publik yang Terstruktur'
       },
       {
-        period: 'Jul. 2025 – Okt. 2025',
-        title: 'Software Engineer',
-        role: 'Codetag Studio',
+        period: 'Sep. 2025 – Des. 2025',
+        title: 'Web Development Consultant',
+        role: 'PT Alfatih Pilar Peradaban',
         description:
-          'Pengembangan web end-to-end, kolaborasi perancangan BRD (Business Requirements Document), integrasi API, dan penerapan desain responsif modern dengan milestone delivery tepat waktu 100%.',
-        technologies: ['React', 'Next.js', 'Node.js', 'Tailwind CSS', 'Git'],
-        impact: '100% On-Time Milestone Delivery'
+          'Memimpin rekayasa frontend dan perancangan website company profile dari nol dengan React.js, Tailwind CSS, dan Swiper.js guna memperkuat branding korporat mitra.',
+        technologies: ['React.js', 'Tailwind CSS', 'JavaScript', 'Swiper.js', 'Figma'],
+        impact: 'Company Profile Online & Digital Presence Resmi'
       },
       {
-        period: 'Des. 2023 – Jan. 2024',
-        title: 'UX Researcher Intern',
-        role: 'Telkom Digital Amoeba',
+        period: '2024 / 2025',
+        title: 'Data & Digitalization Intern (QC Department)',
+        role: 'PT Astra Honda Motor (AHM)',
         description:
-          'Riset komprehensif end-to-end melalui metode kuantitatif & kualitatif untuk validasi produk inovasi digital internal Telkom.',
-        technologies: ['User Research', 'Usability Testing', 'Quantitative Analysis', 'Figma'],
-        impact: 'Validated Product Roadmap'
+          'Mengembangkan modul otomatisasi inspeksi komponen machining menggunakan Excel VBA Macro dan mendukung digitalisasi pencatatan data mutu harian.',
+        technologies: ['Excel VBA Macro', 'Quality Control', 'Data Automation', 'Data Cleaning'],
+        impact: 'Automasi Rekapitulasi Data Inspeksi Mutu Komponen'
       },
       {
-        period: 'Agu. 2023 – Jan. 2024',
-        title: 'UI/UX Designer Intern',
-        role: 'Rakamin Academy',
+        period: 'Jan. 2020 – Mei 2020',
+        title: 'HRGA Administration Intern',
+        role: 'PT Supernova Flexible Packaging',
         description:
-          'Merancang antarmuka aplikasi travel inovatif dengan skor kelayakan SUS 79% dan merancang alur interaksi pengguna yang intuitif.',
-        technologies: ['Figma', 'Prototyping', 'Design System', 'SUS Testing'],
-        impact: '79% SUS Feasibility Score'
+          'Mengelola database absensi karyawan, administrasi surat-menyurat perusahaan, serta pengarsipan fisik dan digital divisi HRGA.',
+        technologies: ['Administration', 'Data Entry', 'HRGA Management', 'Microsoft Excel'],
+        impact: 'Akurasi Rekap Presensi Karyawan'
       }
     ],
     educationLabel: 'Pendidikan Formal',
     educationItems: [
       {
-        institution: 'Telkom University',
-        period: '2021 – 2025',
-        degree: 'S1 Teknik Informatika (S.Kom)',
-        details: 'IPK 3.52 / 4.00. Fokus skripsi dan riset pada rekayasa sistem informasi korporat, arsitektur software, dan transformasi proses digital.'
+        institution: 'Universitas Pendidikan Indonesia (UPI)',
+        period: '2022 – 2026',
+        degree: 'S1 Sistem Informasi Kelautan',
+        details: 'Fokus pada analisis geospasial kelautan (GIS), pemodelan data oseanografi, penginderaan jauh, dan pengembangan sistem informasi berbasis web.'
+      },
+      {
+        institution: 'SMK (Sekolah Menengah Kejuruan)',
+        period: '2018 – 2021',
+        degree: 'Rekayasa Perangkat Lunak (RPL)',
+        details: 'Fondasi kuat pemrograman komputer, basis data relasional MySQL, logika algoritma, dan rekayasa perangkat lunak desktop/web.'
       }
     ],
-    certificationsLabel: 'Sertifikasi & Lisensi Resmi',
+    certificationsLabel: 'Sertifikasi Resmi',
     certificationsItems: [
       {
-        title: 'Junior Web Developer',
-        issuer: 'Badan Nasional Sertifikasi Profesi (BNSP)',
-        period: 'Jan 2025 – Jan 2028',
-        status: 'Aktif & Terverifikasi Nasional',
-        url: ''
-      },
-      {
-        title: 'Conversion Optimization Certification Exam',
-        issuer: 'Skillshop by Google',
-        period: '2025',
-        status: 'Terakreditasi Google',
-        url: ''
-      },
-      {
-        title: 'Learn Advanced Excel (Formulas, VBA & Macros)',
-        issuer: 'Learnify IT',
-        period: '2025',
-        status: 'Terverifikasi',
-        url: ''
-      },
-      {
-        title: 'UI/UX Intensive Bootcamp',
-        issuer: 'Rakamin Academy',
-        period: 'Jan 2024',
-        status: 'Lulus dengan Proyek Portofolio Terpilih',
+        title: 'IT Software Programming for Business',
+        issuer: 'BBPVP Bekasi — Badan Nasional Sertifikasi Profesi (BNSP)',
+        period: 'Mar 2022 – Jun 2022',
+        status: 'Tersertifikasi Kompetensi BNSP',
         url: ''
       }
     ]
   },
   en: {
-    heroLabel: 'Career Journey',
-    heroTitle: 'Building proven industrial manufacturing systems and enterprise digital ecosystems.',
+    heroLabel: 'Professional Journey & Expertise',
+    heroTitle: 'Bridging Marine Information Systems, Spatial Data Analytics, & Web Development.',
     heroSummary:
-      'Informatics Engineering graduate from Telkom University (GPA 3.52) with an established track record in industrial digitalization at Dharma Group (PT Dharma Controlcable Indonesia & PT Dharma Polimetal Tbk.). Proven in Smart Factory WMS implementations, Digital PICA quality systems, corporate meeting room booking (1,000+ active users), and certified by BNSP as a Junior Web Developer.',
+      'Marine Information Systems graduate from Universitas Pendidikan Indonesia (UPI) experienced in geospatial data engineering, corporate archiving & HRIS at PT Pelindo (Persero), QC data automation at PT Astra Honda Motor, and regional statistics at BPS. Formally certified by BNSP in IT Software Programming for Business.',
     quickFactsLabel: 'Quick Facts',
     quickFacts: [
-      'B.S. Informatics Engineering, Telkom University (GPA 3.52/4.00)',
-      '1,000+ Active Users across Dharma Group Corporate Systems',
-      'BNSP Certified Junior Web Developer (2025 - 2028)'
+      'B.S. in Marine Information Systems, Universitas Pendidikan Indonesia (2022 - 2026)',
+      'BNSP Certified: IT Software Programming for Business',
+      'Internship Track Record across State-Owned Port Logistics (Pelindo), Automotive (AHM), & Government (BPS)'
     ],
     contactActions: {
       emailLabel: 'Email',
-      emailValue: 'sulthanabdi1@gmail.com',
+      emailValue: 'annisa.m.sabilla@gmail.com',
       linkedinLabel: 'LinkedIn',
-      linkedinValue: 'linkedin.com/in/sulthan-abdi-dzikry',
-      githubLabel: 'Primary Portfolio',
-      githubValue: 'Back to Primary Portfolio',
-      githubUrl: '/',
-      meetingLabel: 'Schedule Discussion',
-      meetingValue: 'sulthanabdi1@gmail.com',
-      meetingUrl: 'mailto:sulthanabdi1@gmail.com',
-      portfolioValue: 'sulthanabdi.dev'
+      linkedinValue: 'linkedin.com/in/annisamaulanasabilla',
+      githubLabel: 'Online Portfolio',
+      githubValue: 'annisamsabilla.netlify.app',
+      githubUrl: 'https://annisamsabilla.netlify.app',
+      meetingLabel: 'Send Direct Inquiry',
+      meetingValue: 'annisa.m.sabilla@gmail.com',
+      meetingUrl: 'mailto:annisa.m.sabilla@gmail.com',
+      portfolioValue: 'annisamsabilla.netlify.app'
     },
-    timelineLabel: 'Career Timeline',
+    timelineLabel: 'Work & Internship Experience',
     timelineItems: [
       {
-        period: 'Aug 2026 – Oct 2026',
-        title: 'IT Support & Digitalization',
-        role: 'PT Dharma Controlcable Indonesia (DCI)',
+        period: 'Jan. 2026 – Aug. 2026',
+        title: 'Archive & HRIS Administration Intern (Magenta BUMN)',
+        role: 'PT Pelabuhan Indonesia (Persero)',
         description:
-          'Engineered Smart Factory solutions: AIS Backend (WMS, automated bin allocation, SAP RFC), Digital PICA for cross-department quality resolution, and Customer Order Tracking for real-time delivery note monitoring.',
-        technologies: ['Laravel 8', 'React 18', 'Next.js', 'MongoDB', 'SAP RFC', 'Tailwind CSS'],
-        impact: 'Smart Factory Ecosystem & Real-time Tracking'
+          'Stationed in Archival Management, HRIS, and HR Administration. Spearheaded verification, indexing, and digital governance for 1,000+ inactive corporate documents under state enterprise retention standards.',
+        technologies: ['HRIS', 'Document Management', 'Digital Archiving', 'Data Verification'],
+        impact: 'Restructured 1,000+ Corporate Records & Accelerated HR Retrieval'
       },
       {
-        period: 'Oct 2025 – Apr 2026',
-        title: 'IT Support & Digitalization',
-        role: 'PT Dharma Polimetal Tbk.',
+        period: 'Oct. 2025 – Dec. 2025',
+        title: 'Design & Spatial Data Intern',
+        role: 'Central Bureau of Statistics (BPS) Bekasi Regency',
         description:
-          'Designed and launched the DOORS meeting room ecosystem serving 1,000+ users across 14 conference rooms with zero scheduling overlap. Revamped corporate HRMS (+50% adoption), digitized LMK QC reporting, and automated hazard monitoring.',
-        technologies: ['PHP', 'Laravel', 'MySQL', 'PWA', 'Figma', 'SUS Testing'],
-        impact: '1,000+ Active Users & Zero Scheduling Conflicts'
+          'Supported census data aggregation and regional statistical insights via MATCHAPRO platform, designing analytical infographics for public publications.',
+        technologies: ['MATCHAPRO', 'Data Visualization', 'Canva', 'Infographics', 'Spreadsheets'],
+        impact: 'Enhanced Regional Public Statistical Dissemination'
       },
       {
-        period: 'Jul 2025 – Oct 2025',
-        title: 'Software Engineer',
-        role: 'Codetag Studio',
+        period: 'Sep. 2025 – Dec. 2025',
+        title: 'Web Development Consultant',
+        role: 'PT Alfatih Pilar Peradaban',
         description:
-          'Delivered end-to-end web engineering, collaborated on Business Requirements Documents (BRDs), implemented robust API integrations, and built responsive web interfaces with 100% on-time milestone delivery.',
-        technologies: ['React', 'Next.js', 'Node.js', 'Tailwind CSS', 'Git'],
-        impact: '100% On-Time Milestone Delivery'
+          'Led frontend design and development of corporate company profile website from scratch using React.js and Tailwind CSS to strengthen digital branding.',
+        technologies: ['React.js', 'Tailwind CSS', 'JavaScript', 'Swiper.js', 'Figma'],
+        impact: 'Delivered Official Corporate Website & Brand Presence'
       },
       {
-        period: 'Dec 2023 – Jan 2024',
-        title: 'UX Researcher Intern',
-        role: 'Telkom Digital Amoeba',
+        period: '2024 / 2025',
+        title: 'Data & Digitalization Intern (QC Department)',
+        role: 'PT Astra Honda Motor (AHM)',
         description:
-          'Conducted end-to-end user research using quantitative and qualitative methodologies to validate internal digital innovation initiatives.',
-        technologies: ['User Research', 'Usability Testing', 'Quantitative Analysis', 'Figma'],
-        impact: 'Validated Product Roadmap'
+          'Engineered automated inspection calculation tools for machining components with Excel VBA Macros and digitized daily Quality Control records.',
+        technologies: ['Excel VBA Macro', 'Quality Control', 'Data Automation', 'Data Cleaning'],
+        impact: 'Automated QC Inspection Analytics & Accuracy'
       },
       {
-        period: 'Aug 2023 – Jan 2024',
-        title: 'UI/UX Designer Intern',
-        role: 'Rakamin Academy',
+        period: 'Jan. 2020 – May 2020',
+        title: 'HRGA Administration Intern',
+        role: 'PT Supernova Flexible Packaging',
         description:
-          'Crafted high-fidelity interfaces for a next-gen travel application, achieving a 79% SUS feasibility rating through iterative prototyping.',
-        technologies: ['Figma', 'Prototyping', 'Design System', 'SUS Testing'],
-        impact: '79% SUS Feasibility Score'
+          'Managed corporate attendance logs, business correspondence, and archived physical/digital records for HRGA operations.',
+        technologies: ['Administration', 'Data Entry', 'HRGA Management', 'Microsoft Excel'],
+        impact: 'Accurate Attendance & Records Management'
       }
     ],
     educationLabel: 'Formal Education',
     educationItems: [
       {
-        institution: 'Telkom University',
-        period: '2021 – 2025',
-        degree: 'B.S. Informatics Engineering (S.Kom)',
-        details: 'GPA 3.52 / 4.00. Focus on enterprise software engineering, distributed systems, and business process automation.'
+        institution: 'Universitas Pendidikan Indonesia (UPI)',
+        period: '2022 – 2026',
+        degree: 'Bachelor in Marine Information Systems',
+        details: 'Focused on coastal spatial analytics (GIS), oceanographic modeling, satellite remote sensing, and web-based spatial application development.'
+      },
+      {
+        institution: 'Vocational High School (SMK)',
+        period: '2018 – 2021',
+        degree: 'Software Engineering (RPL)',
+        details: 'Rigorous foundation in computer programming, relational database systems, and application engineering.'
       }
     ],
-    certificationsLabel: 'Official Certifications & Licenses',
+    certificationsLabel: 'Professional Certifications',
     certificationsItems: [
       {
-        title: 'Junior Web Developer',
-        issuer: 'National Professional Certification Board (BNSP)',
-        period: 'Jan 2025 – Jan 2028',
-        status: 'Active & Nationally Certified',
-        url: ''
-      },
-      {
-        title: 'Conversion Optimization Certification Exam',
-        issuer: 'Skillshop by Google',
-        period: '2025',
-        status: 'Google Accredited',
-        url: ''
-      },
-      {
-        title: 'Learn Advanced Excel (Formulas, VBA & Macros)',
-        issuer: 'Learnify IT',
-        period: '2025',
-        status: 'Verified',
-        url: ''
-      },
-      {
-        title: 'UI/UX Intensive Bootcamp',
-        issuer: 'Rakamin Academy',
-        period: 'Jan 2024',
-        status: 'Graduated with Selected Capstone Project',
+        title: 'IT Software Programming for Business',
+        issuer: 'BBPVP Bekasi — National Professional Certification Board (BNSP)',
+        period: 'Mar 2022 – Jun 2022',
+        status: 'BNSP Certified',
         url: ''
       }
     ]
   }
 }
 
-export function getCareerProfileByLanguage(lang = 'id') {
+export const getCareerProfileByLanguage = (lang = 'id') => {
   return careerProfileSource[lang] || careerProfileSource.id
 }
+
+export const getCareerProfile = () => careerProfileSource

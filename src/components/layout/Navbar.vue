@@ -60,8 +60,8 @@ const handleMobileNav = (section) => {
         class="text-xs sm:text-sm font-bold tracking-tight text-[var(--ink-primary)] hover:opacity-80 transition-opacity flex items-center gap-1.5"
         title="Portofolio"
       >
-        <span class="font-mono hidden sm:inline uppercase">Sulthan Abdi Dzikry</span>
-        <span class="font-mono sm:hidden">S.A.D</span>
+        <span class="font-mono hidden sm:inline uppercase">Annisa Maulana Sabilla</span>
+        <span class="font-mono sm:hidden">A.M.S</span>
         <span class="font-mono text-zinc-400">/</span>
         <span class="font-mono text-[10px] font-bold px-1.5 py-0.5 rounded bg-[var(--brand-sun)] text-slate-950 border border-[var(--comic-border)] shadow-[1px_1px_0px_var(--comic-border)]">
           2.0

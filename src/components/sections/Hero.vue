@@ -82,8 +82,8 @@ const emit = defineEmits(['goToSection'])
               <!-- Avatar Illustration / Photo Container -->
               <div class="w-full aspect-[4/4.5] rounded-xl overflow-hidden border-[1.5px] border-[var(--comic-border)] bg-[var(--surface-subtle)] relative mb-3">
                 <img
-                  src="/profile/abdi.jpg"
-                  alt="Sulthan Abdi Dzikry"
+                  src="/profile/foto pertama.jpg"
+                  alt="Annisa Maulana Sabilla"
                   class="w-full h-full object-cover"
                   fetchpriority="high"
                 />
@@ -97,11 +97,11 @@ const emit = defineEmits(['goToSection'])
               <!-- Polaroid Caption Strip -->
               <div class="px-1 pt-1 flex items-center justify-between">
                 <div>
-                  <h2 class="text-base font-black text-[var(--ink-primary)] tracking-tight">Sulthan Abdi Dzikry</h2>
+                  <h2 class="text-base font-black text-[var(--ink-primary)] tracking-tight">Annisa Maulana Sabilla</h2>
                   <p class="text-xs text-[var(--ink-muted)] font-medium">{{ c.quickStatsRole || 'Full-Stack & Systems Engineer' }}</p>
                 </div>
                 <div class="w-8 h-8 rounded-full bg-[var(--brand-sun)] border border-[var(--comic-border)] flex items-center justify-center text-slate-950 font-black text-xs shadow-[1px_1px_0px_var(--comic-border)]">
-                  SAD
+                  AMS
                 </div>
               </div>
             </div>

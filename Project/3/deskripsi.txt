@@ -1,0 +1,25 @@
+Guardian Of The Sea (UI/UX)
+Created on November 2023 by Annisa Maulana Sabilla · Last Updated on November 2023
+
+Gotss Figma UI
+🔗 Figma Prototype
+View Prototype
+📝 Overview
+Gotss adalah aplikasi konseptual yang dirancang untuk mengatasi isu pencemaran laut. Desain UI/UX-nya menampilkan berbagai fitur penting seperti informasi lokasi rawan pencemaran, edukasi, berita terkini, pelaporan oleh warga (citizen science), serta event-event lingkungan.
+
+🛠️ The Design Stack
+Figma: Tools utama untuk membuat UI layout dan prototyping.
+Wireframing: Perancangan awal struktur antar layar.
+Prototyping: Alur interaktif antar halaman aplikasi.
+Design System: Konsistensi elemen UI dalam aplikasi.
+Mobile-first: Fokus desain pada tampilan mobile.
+✨ Features
+🔸 Trash-Sea: Informasi lokasi laut dengan potensi sampah tinggi.
+🔸 Education: Artikel dan konten edukasi tentang laut dan lingkungan.
+🔸 News: Berita terkini seputar pencemaran laut dan kebijakan.
+🔸 Citizen Science Hub: Pengguna dapat berpartisipasi melaporkan kondisi lingkungan.
+🔸 Event: Info kegiatan sosial atau edukatif terkait lingkungan.
+🧠 Kesimpulan
+Project ini merepresentasikan peran desain dalam menyampaikan isu penting seperti pencemaran laut. Prototipe ini merupakan bentuk kontribusi melalui pendekatan UI/UX yang ramah pengguna dan edukatif.
+
+Kamu bisa menjelajahi desainnya langsung di Figma prototype ini.

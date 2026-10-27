@@ -29,7 +29,7 @@ defineProps({
         </div>
         
         <div class="pt-2">
-          <a href="/profile/CV_Sulthan_Abdi_Dzikry_Master.pdf" download="CV_Sulthan_Abdi_Dzikry_Master.pdf" class="btn-comic-primary inline-flex">
+          <a href="/profile/CV_Annisa_Maulana_Sabilla_ATS.pdf" download="CV_Annisa_Maulana_Sabilla_ATS.pdf" class="btn-comic-primary inline-flex">
             <span>{{ c.ctaDownloadCv }}</span>
             <Download class="w-4 h-4 ml-1.5" aria-hidden="true" />
           </a>
@@ -45,7 +45,7 @@ defineProps({
             {{ c.aboutPullQuote }}
           </p>
           <div class="mt-3 flex items-center justify-end gap-2 font-mono text-xs text-[var(--brand-coral)] font-bold">
-            <span>— Sulthan Abdi Dzikry</span>
+            <span>— Annisa Maulana Sabilla</span>
           </div>
         </div>
         

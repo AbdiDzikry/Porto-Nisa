@@ -18,7 +18,7 @@ const scrollToTop = () => {
       <!-- Brand & Tagline -->
       <div class="flex items-center gap-2 text-center lg:text-left">
         <span class="font-black text-base text-[var(--ink-primary)] tracking-tight">
-          SULTHAN ABDI<span class="text-[var(--brand-coral)] font-black">;</span>
+          ANNISA MAULANA<span class="text-[var(--brand-coral)] font-black">;</span>
         </span>
         <span class="text-[var(--comic-border)]">•</span>
         <span class="text-[var(--ink-muted)]">IT Support & Digitalization</span>
@@ -37,7 +37,7 @@ const scrollToTop = () => {
       <!-- Right: Back to Top & Copyright -->
       <div class="flex items-center gap-4 text-center lg:text-right">
         <div class="font-mono text-xs hidden sm:block">
-          <span>© {{ currentYear }} <strong class="text-[var(--ink-primary)]">Sulthan Abdi Dzikry</strong></span>
+          <span>© {{ currentYear }} <strong class="text-[var(--ink-primary)]">ANNISA MAULANA Dzikry</strong></span>
         </div>
 
         <button

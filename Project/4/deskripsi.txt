@@ -1,0 +1,26 @@
+Aplikasi Administrasi Sekolah - VB. NET
+Created on November 2020 by Annisa Maulana Sabilla · Last Updated on October 2022
+
+Aplikasi Administrasi
+🔗 Repository & Demo
+Repository
+View Demo (Google Drive)
+📝 Overview
+Aplikasi administrasi sekolah untuk mengelola pembayaran SPP siswa, penggajian guru, serta pengolahan dan pelaporan data.
+
+🛠️ Tech Stack
+VB. NET: Tools utama untuk pengembangan aplikasi dekstop berbasis Windows.
+MySQL: Sebagai Database, diakses melalui phpmyadmin.
+Crystal Report: Tools untuk membuat dan mencetak laporan data (pembayaran, penggajian dan rekap data).
+Microsoft Visual Studio: IDE utama untuk desain UI, Coding dan Debugging.
+ODBC Connector: Koneksi antara VB. NET dan MySQL.
+✨ Features
+🔸 Login Multi - User: Sistem autentikasi untuk admin dan staff.
+🔸 Management Data: CRUD data Siswa, Guru, Petugas.
+🔸 Pembayaran SPP: Pencatatan transaksi pembayaran SPP siswa per bulan.
+🔸 Penggajian Guru: Proses input gaji.
+🔸 Report Pembayaran SPP: Cetak laporan pembayaran SPP berdasarkan periode tertentu.
+🔸 Report Penggajian Guru: Rekap dan cetak slip gaji guru bulanan.
+🔸 Data Search & Filtering: Fitur pencarian dan penyaringan data untuk kemudahan akses dan manajemen.
+🧠 Kesimpulan
+Proyek ini memberikan pengalaman praktis dalam membangun aplikasi desktop berbasis VB.NET untuk kebutuhan administrasi sekolah. Dengan fitur-fitur terintegrasi dan koneksi database MySQL, aplikasi ini mampu mendukung efisiensi pengelolaan pembayaran SPP, penggajian guru, serta laporan data secara sistematis dan terstruktur.
