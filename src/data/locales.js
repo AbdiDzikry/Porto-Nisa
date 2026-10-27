@@ -1,14 +1,14 @@
 export const copy = {
   id: {
     skip: 'Lewati ke konten utama',
-    issue: 'Portofolio Digitalisasi & Rekayasa Sistem',
-    eyebrow: 'IT Support & Digitalization Engineer',
+    issue: 'Log Digitalisasi & Rekayasa Data',
+    eyebrow: 'Marine Information Systems & Spatial Web Specialist',
     coverHeadline: ['Annisa Maulana;', 'Marine Information Systems & Spatial Web Specialist'],
     coverBody:
-      'Lulusan Sistem Informasi Kelautan UPI dengan keahlian terintegrasi di bidang analisis data spasial (GIS), digitalisasi proses kearsipan BUMN (Pelindo), otomatisasi data inspeksi di PT Astra Honda Motor, serta rekayasa web modern (React.js & Leaflet).',
+      'Lulusan Sistem Informasi Kelautan UPI dengan pengalaman di bidang analisis data spasial (GIS), digitalisasi kearsipan BUMN di PT Pelindo (Persero), otomasi data QC di PT Astra Honda Motor, serta rekayasa aplikasi web modern (React.js & Leaflet).',
     ctaView: 'Lihat Proyek Saya',
     ctaContact: 'Hubungi Saya',
-    ctaDownloadCv: 'Unduh CV Lengkap',
+    ctaDownloadCv: 'Unduh CV ATS (PDF)',
 
     homeLabel: 'Beranda',
     aboutLabel: 'Tentang',
@@ -17,46 +17,47 @@ export const copy = {
     skillsLabel: 'Keahlian',
     experienceLabel: 'Pengalaman',
     contactLabel: 'Kontak',
-    
-    availabilityStatus: 'Terbuka untuk kolaborasi proyek digitalisasi & full-stack development',
-    viewModeList: 'Tampilan List',
-    viewModeGrid: 'Tampilan Grid',
-    cmdPrompt: 'Cari proyek, keahlian, atau halaman...',
-    cmdBadge: 'Menu Cepat',
-    cmdCopyEmail: 'Salin Email',
-    cmdMeeting: 'Jadwalkan Diskusi',
-    cmdDownloadResume: 'Unduh CV (PDF)',
-    cmdToggleTheme: 'Ganti Tema (Retro / Soft / Memphis)',
+
+    cmdBadge: 'Indeks',
+    cmdPrompt: 'Cari proyek, keahlian, pengalaman, atau aksi...',
+    cmdNoResults: 'Tidak ada hasil untuk',
+    cmdNavHint: 'Navigasi',
+    cmdSelectHint: 'Pilih',
+    cmdEscHint: 'Tutup',
+    cmdCategoryActions: 'Aksi Cepat',
+    cmdCategoryNav: 'Navigasi Halaman',
+    cmdCategoryProjects: 'Proyek',
+    cmdToggleTheme: 'Ganti Tema Tampilan',
     cmdToggleLang: 'Ganti Bahasa (ID/EN)',
-    quickStatsGpa: 'IPK 3.52 / 4.00 (Telkom University)',
-    quickStatsPkg: 'Top 10 Finalis Inovasi Maritim & BNSP',
-    quickStatsRole: 'IT Support & Digitalization',
+    quickStatsGpa: 'S1 Sistem Informasi Kelautan (UPI)',
+    quickStatsPkg: 'Top 10 Inovasi Maritim & BNSP Certified',
+    quickStatsRole: 'Marine GIS & Spatial Web Specialist',
 
     aboutTitle: 'Mengenal saya lebih dekat.',
     aboutBodyP1:
-      'Saya adalah praktisi Sistem Informasi Kelautan berlatar belakang S1 dari Universitas Pendidikan Indonesia (UPI) dan SMK Rekayasa Perangkat Lunak. Fokus utama saya adalah menjembatani analisis data spasial (GIS), digitalisasi administrasi korporat, serta pembangunan aplikasi web interaktif yang menyelesaikan tantangan nyata di sektor maritim dan industri.',
+      'Saya adalah lulusan Sistem Informasi Kelautan dari Universitas Pendidikan Indonesia (UPI) dengan fondasi rekayasa perangkat lunak dari SMK RPL. Fokus keahlian saya berakar pada pengolahan data spasial (GIS), digitalisasi sistem kearsipan & HRIS korporat, serta pembangunan aplikasi web interaktif yang menyajikan data kompleks menjadi visualisasi intuitif.',
     aboutBodyP2:
-      'Berbekal sertifikasi kompetensi IT Software Programming for Business dari BNSP serta rekam jejak magang di PT Pelabuhan Indonesia (Persero), BPS, dan PT Astra Honda Motor, saya terbiasa menghasilkan solusi berbasis data yang akurat, sistematis, dan user-friendly.',
-    aboutPullQuote: '“Teknologi terbaik adalah yang menyederhanakan alur kerja kompleks dan memberi dampak nyata di lantai produksi.”',
+      'Tersertifikasi kompetensi IT Software Programming for Business oleh BNSP serta berpengalaman magang di BUMN (PT Pelindo), BPS Kabupaten Bekasi, PT Astra Honda Motor (Quality Control), dan PT Supernova. Terbiasa memadukan pemikiran analitis, otomatisasi spreadsheet/VBA, dan pengembangan frontend modern.',
+    aboutPullQuote: '“Solusi digital terbaik adalah yang mampu mengubah data kompleks menjadi visualisasi yang mudah dipahami dan memberi manfaat nyata bagi masyarakat.”',
     
     highlightsTitle: 'Sekilas Tentang Saya',
     highlightsBadge: 'PROFIL',
     highlights: [
-      { label: 'Pendidikan', value: 'S1 Teknik Informatika — Telkom University (IPK 3.52)' },
-      { label: 'Fokus Utama', value: 'Marine GIS, Spatial Analytics, Corporate Archiving & Web Dev' },
-      { label: 'Sertifikasi', value: 'BNSP IT Software Programming for Business' },
-      { label: 'Pengalaman Industri', value: 'PT Pelindo (Persero), BPS Kab. Bekasi, PT Astra Honda Motor' }
+      { label: 'Pendidikan', value: 'S1 Sistem Informasi Kelautan — Universitas Pendidikan Indonesia (2022–2026)' },
+      { label: 'Fokus Utama', value: 'Marine WebGIS, Spatial Analytics, Corporate Archiving & Frontend Web' },
+      { label: 'Sertifikasi', value: 'BNSP IT Software Programming for Business (BBPVP Bekasi)' },
+      { label: 'Pengalaman Kerja', value: 'PT Pelindo (Persero), BPS Kab. Bekasi, PT Astra Honda Motor, PT Supernova' }
     ],
 
-    worksTitle: 'Proyek Pilihan & Digitalisasi Manufaktur',
+    worksTitle: 'Karya Terpilih & Inovasi Teknologi',
     worksMeta: 'Karya & Portofolio',
-    ctaDetails: 'Lihat Detail Proyek',
-    moreProjectsTitle: 'Lihat Semua Proyek di Portofolio Utama',
-    moreProjectsSubtitle: 'Eksplorasi studi kasus lengkap, presentasi arsitektur, dan dokumentasi interaktif di portofolio utama.',
-    moreProjectsCta: 'Kembali ke Portofolio Utama',
-    moreProjectsTag: 'Portofolio Utama',
-    moreProjectsRole: 'Arsitektur & Dokumentasi Lengkap',
-    moreProjectsListMeta: 'Annisa Maulana Sabilla • Case Studies & Interactive Showcase',
+    ctaDetails: 'Cek Detail Projek',
+    moreProjectsTitle: 'Lihat Semua Portofolio Online',
+    moreProjectsSubtitle: 'Eksplorasi proyek data spasial, antarmuka web, dan studi kasus interaktif lainnya.',
+    moreProjectsCta: 'Buka Portofolio',
+    moreProjectsTag: 'Portofolio Online',
+    moreProjectsRole: 'GIS & Web Specialist Showcase',
+    moreProjectsListMeta: 'Annisa Maulana Sabilla • Case Studies & Projects',
     moreProjectsPreviewSub: 'Eksplorasi Studi Kasus Lengkap ↗',
     
     skillsTitle: 'Teknologi & Keahlian yang Biasa Digunakan',
@@ -64,35 +65,35 @@ export const copy = {
     skillsSub: 'Bidang Utama',
     skillsItems: [
       {
-        id: 'smart-factory',
-        category: 'Industrial Systems & Automation',
-        title: 'Smart Factory & WMS Ecosystem',
+        id: 'gis-spatial',
+        category: 'Geographic Information Systems (GIS)',
+        title: 'Marine WebGIS & Spatial Analysis',
         description:
-          'Membangun modul pergudangan otomatis (WMS), alokasi rak cerdas (Bin Allocation), integrasi SAP RFC, dan pemindaian barcode real-time di lantai produksi.',
-        badge: 'Enterprise Production'
+          'Pengolahan citra satelit kelautan (Suhu Permukaan Laut & Klorofil-a), pemetaan spasial ArcGIS, integrasi Leaflet.js interaktif, dan pemodelan Machine Learning Random Forest.',
+        badge: 'Top 10 Awarded'
       },
       {
-        id: 'fullstack-web',
-        category: 'Web Architecture & APIs',
-        title: 'Full-Stack Web Development',
+        id: 'frontend-web',
+        category: 'Web Development',
+        title: 'Modern Frontend Engineering',
         description:
-          'Mengembangkan sistem web responsif dan skalabel dengan Laravel, Next.js, React, Node.js, RESTful API terstruktur, serta database MongoDB & PostgreSQL/MySQL.',
+          'Membangun antarmuka web interaktif, cepat, dan responsif (mobile-first) menggunakan React.js, JavaScript (ES6+), Tailwind CSS, Swiper.js, serta Chart.js.',
         badge: 'BNSP Certified'
       },
       {
-        id: 'quality-systems',
-        category: 'Enterprise Quality & Tracking',
-        title: 'Quality Management & Real-Time Tracking',
+        id: 'data-automation',
+        category: 'Data & Digitalization',
+        title: 'Office Automation & Database Systems',
         description:
-          'Merancang portal Digital PICA (Problem Identification & Corrective Action) dan sistem pelacakan pengiriman pelanggan (Customer Order Tracking).',
-        badge: 'Zero Scheduling Conflict'
+          'Automasi rekapitulasi data dan inspeksi QC dengan Excel VBA Macro, integrasi database relasional MySQL, pelaporan Crystal Reports, dan platform MATCHAPRO BPS.',
+        badge: 'Industry Tested'
       },
       {
         id: 'ui-ux-design',
-        category: 'UI/UX & Product Thinking',
-        title: 'UI/UX Design & User Research',
+        category: 'Product & Visual Design',
+        title: 'UI/UX Design & Prototyping',
         description:
-          'Melakukan riset pengguna, pengujian SUS (System Usability Scale), pembuatan wireframe dan prototype interaktif di Figma untuk memastikan adopsi pengguna tinggi.',
+          'Perancangan arsitektur informasi, alur pengguna (user flow), mobile-first wireframing, dan prototipe interaktif di Figma serta diseminasi infografis data di Canva.',
         badge: 'High Usability'
       }
     ],
@@ -100,19 +101,19 @@ export const copy = {
     experienceTitle: 'Riwayat Pengalaman & Karir',
     experienceMeta: 'Linimasa Profesional',
     contactTitle: 'Mari Mulai Berkolaborasi',
-    contactSubtitle: 'Tertarik mendiskusikan peluang kerja, digitalisasi sistem industri, atau proyek web modern? Silakan hubungi saya.',
-    contactAvailable: 'Status: Tersedia untuk Kolaborasi & Posisi Baru',
+    contactSubtitle: 'Tertarik mendiskusikan peluang kerja, proyek pengolahan data spasial (GIS), atau pengembangan website modern? Silakan hubungi saya.',
+    contactAvailable: 'Status: Terbuka untuk Kolaborasi & Peluang Karir Baru',
     contactDirectHeading: 'Kirim Pesan Langsung',
     contactDirectDesc: 'Hubungi saya melalui email pribadi atau LinkedIn:',
     contactPhoneHeading: 'WhatsApp / Telepon',
-        formTitle: 'Kirim Pesan Langsung',
+    formTitle: 'Kirim Pesan Langsung',
     formBadge: 'PESAN',
     formName: 'Nama Lengkap',
     formNamePlaceholder: 'Misal: Budi Santoso',
     formEmail: 'Alamat Email',
     formEmailPlaceholder: 'nama@perusahaan.com',
     formMessage: 'Pesan / Topik Diskusi',
-    formMessagePlaceholder: 'Tuliskan pesan, pertanyaan, atau detail proyek Anda...',
+    formMessagePlaceholder: 'Tuliskan pesan, pertanyaan, atau detail kebutuhan Anda...',
     formSend: 'Kirim Pesan',
     formSending: 'Mengirim...',
     formSuccess: 'Pesan berhasil terkirim! Terima kasih.',
@@ -123,22 +124,25 @@ export const copy = {
     contactFormMsg: 'Pesan',
     contactSendBtn: 'Kirim Pesan Sekarang',
     footerRights: 'Hak Cipta Dilindungi.',
-    footerTagline: 'Didesain dengan presisi dan dedikasi rekayasa sistem.'
-,
-    themeLabels: { rose: 'Matcha Blush',
+    footerTagline: 'Didesain dengan dedikasi pada rekayasa sistem informasi & data spasial.',
+    themeLabels: {
+      soft: 'Soft Funk',
       rose: 'Matcha Blush',
-      retro: 'Retro Funk', soft: 'Soft Funk', memphis: 'Memphis', mono: 'Monochrome' }
+      retro: 'Retro Funk',
+      memphis: 'Memphis',
+      mono: 'Monochrome'
+    }
   },
   en: {
     skip: 'Skip to main content',
-    issue: 'Engineering & Digitalization Log',
-    eyebrow: 'IT Support & Digitalization Engineer',
+    issue: 'Data Engineering & Digitalization Log',
+    eyebrow: 'Marine Information Systems & Spatial Web Specialist',
     coverHeadline: ['Annisa Maulana;', 'Marine Information Systems & Spatial Web Specialist'],
     coverBody:
-      'Marine Information Systems graduate from Universitas Pendidikan Indonesia (UPI) specializing in spatial data engineering (GIS), digital archiving at Pelindo, QC automation at Astra Honda Motor, and modern web application development.',
+      'Marine Information Systems graduate from Universitas Pendidikan Indonesia (UPI) specializing in spatial data engineering (GIS), corporate digital archiving at PT Pelindo (Persero), QC data automation at PT Astra Honda Motor, and modern web application development.',
     ctaView: 'Explore Projects',
     ctaContact: 'Contact Me',
-    ctaDownloadCv: 'Download Full CV',
+    ctaDownloadCv: 'Download ATS CV (PDF)',
 
     homeLabel: 'Home',
     aboutLabel: 'About',
@@ -147,46 +151,47 @@ export const copy = {
     skillsLabel: 'Skills',
     experienceLabel: 'Experience',
     contactLabel: 'Contact',
-    
-    availabilityStatus: 'Open for industrial digitalization & full-stack opportunities',
-    viewModeList: 'List View',
-    viewModeGrid: 'Grid View',
-    cmdPrompt: 'Search projects, skills, or pages...',
-    cmdBadge: 'Quick Menu',
-    cmdCopyEmail: 'Copy Email',
-    cmdMeeting: 'Schedule Meeting',
-    cmdDownloadResume: 'Download Resume (PDF)',
-    cmdToggleTheme: 'Toggle Theme (Retro / Soft / Memphis)',
+
+    cmdBadge: 'Index',
+    cmdPrompt: 'Search projects, skills, experience, or actions...',
+    cmdNoResults: 'No results for',
+    cmdNavHint: 'Navigate',
+    cmdSelectHint: 'Select',
+    cmdEscHint: 'Close',
+    cmdCategoryActions: 'Quick Actions',
+    cmdCategoryNav: 'Navigation',
+    cmdCategoryProjects: 'Projects',
+    cmdToggleTheme: 'Toggle Visual Theme',
     cmdToggleLang: 'Switch Language (EN/ID)',
-    quickStatsGpa: 'GPA 3.52 / 4.00 (Telkom University)',
-    quickStatsPkg: 'Top 10 Maritime Innovation & BNSP',
-    quickStatsRole: 'IT Support & Digitalization',
+    quickStatsGpa: 'B.S. Marine Information Systems (UPI)',
+    quickStatsPkg: 'Top 10 Maritime Innovation & BNSP Certified',
+    quickStatsRole: 'Marine GIS & Spatial Web Specialist',
 
     aboutTitle: 'Getting to know me better.',
     aboutBodyP1:
-      'I am a Software & Digitalization Engineer with a B.S. in Informatics Engineering from Telkom University. My work focuses on industrial manufacturing digitalization (Smart Factory), warehouse management system (WMS) integration, customer supply chain tracking, and digital quality management (Digital PICA).',
+      'I hold a Bachelor of Science in Marine Information Systems from Universitas Pendidikan Indonesia (UPI) with a secondary school foundation in Software Engineering (RPL). My core competencies center on spatial data analytics (GIS), enterprise digital archiving and HRIS governance, and modern web application development that translates complex datasets into intuitive visualizations.',
     aboutBodyP2:
-      'Holding a BNSP Junior Web Developer certification combined with direct factory-floor problem solving, I build resilient systems that streamline operator routines and empower management with real-time operational visibility.',
-    aboutPullQuote: '“The best technology simplifies complex workflows and delivers real, measurable impact on the factory floor.”',
+      'Certified in IT Software Programming for Business by the National Professional Certification Board (BNSP), with practical internship experience across state-owned port logistics (PT Pelindo), regional statistics (BPS), automotive quality control (PT Astra Honda Motor), and flexible packaging (PT Supernova). Experienced in uniting analytical reasoning, VBA automation, and modern frontend tools.',
+    aboutPullQuote: '“The best digital solutions transform complex spatial datasets into intuitive visualizations that create tangible public value.”',
     
     highlightsTitle: 'Quick Highlights',
     highlightsBadge: 'PROFILE',
     highlights: [
-      { label: 'Education', value: 'B.S. Informatics Engineering — Telkom University (GPA 3.52)' },
-      { label: 'Core Focus', value: 'Smart Factory, WMS, Quality Portals & Full-Stack Web' },
-      { label: 'Certification', value: 'BNSP Junior Web Developer & Google Skillshop' },
-      { label: 'Industry Experience', value: 'PT Pelindo (Persero), BPS Bekasi, PT Astra Honda Motor' }
+      { label: 'Education', value: 'B.S. Marine Information Systems — Universitas Pendidikan Indonesia (2022–2026)' },
+      { label: 'Core Focus', value: 'Marine WebGIS, Spatial Analytics, Corporate Archiving & Frontend Web' },
+      { label: 'Certification', value: 'BNSP IT Software Programming for Business (BBPVP Bekasi)' },
+      { label: 'Industry Track Record', value: 'PT Pelindo (Persero), BPS Bekasi Regency, PT Astra Honda Motor, PT Supernova' }
     ],
 
-    worksTitle: 'Featured Projects & Industrial Digitalization',
+    worksTitle: 'Featured Projects & Technical Innovations',
     worksMeta: 'Selected Works',
     ctaDetails: 'View Project Details',
-    moreProjectsTitle: 'Explore More Projects in Primary Portfolio',
-    moreProjectsSubtitle: 'Discover in-depth case studies, architecture presentations, and interactive showcases in the primary portfolio.',
-    moreProjectsCta: 'Back to Primary Portfolio',
-    moreProjectsTag: 'Primary Portfolio',
-    moreProjectsRole: 'Full Architecture & Showcases',
-    moreProjectsListMeta: 'Annisa Maulana Sabilla • Case Studies & Interactive Showcase',
+    moreProjectsTitle: 'Explore Online Portfolio',
+    moreProjectsSubtitle: 'Discover spatial data platforms, modern web interfaces, and interactive case studies.',
+    moreProjectsCta: 'Open Portfolio',
+    moreProjectsTag: 'Online Portfolio',
+    moreProjectsRole: 'GIS & Web Specialist Showcase',
+    moreProjectsListMeta: 'Annisa Maulana Sabilla • Case Studies & Projects',
     moreProjectsPreviewSub: 'Explore Case Studies ↗',
     
     skillsTitle: 'Technologies & Technical Arsenal',
@@ -194,72 +199,72 @@ export const copy = {
     skillsSub: 'Core Competencies',
     skillsItems: [
       {
-        id: 'smart-factory',
-        category: 'Industrial Systems & Automation',
-        title: 'Smart Factory & WMS Ecosystem',
+        id: 'gis-spatial',
+        category: 'Geographic Information Systems (GIS)',
+        title: 'Marine WebGIS & Spatial Analysis',
         description:
-          'Building automated warehouse modules (WMS), intelligent bin allocation algorithms, SAP RFC integration, and real-time barcode scanning on shop floors.',
-        badge: 'Enterprise Production'
+          'Processing ocean satellite feeds (Sea Surface Temperature & Chlorophyll-a), spatial mapping in ArcGIS, interactive Leaflet.js mapping, and Random Forest machine learning classification.',
+        badge: 'Top 10 Awarded'
       },
       {
-        id: 'fullstack-web',
-        category: 'Web Architecture & APIs',
-        title: 'Full-Stack Web Development',
+        id: 'frontend-web',
+        category: 'Web Development',
+        title: 'Modern Frontend Engineering',
         description:
-          'Developing responsive, scalable web systems using Laravel, Next.js, React, Node.js, structured REST APIs, and MongoDB & PostgreSQL/MySQL databases.',
+          'Building responsive, fast, and mobile-first user interfaces with React.js, modern JavaScript (ES6+), Tailwind CSS, Swiper.js, and Chart.js.',
         badge: 'BNSP Certified'
       },
       {
-        id: 'quality-systems',
-        category: 'Enterprise Quality & Tracking',
-        title: 'Quality Management & Real-Time Tracking',
+        id: 'data-automation',
+        category: 'Data & Digitalization',
+        title: 'Office Automation & Database Systems',
         description:
-          'Architecting Digital PICA (Problem Identification & Corrective Action) portal and real-time Customer Order Tracking system.',
-        badge: 'Zero Scheduling Conflict'
+          'Automating QC inspection audits using Excel VBA Macros, relational MySQL database management, Crystal Reports generation, and BPS MATCHAPRO platform workflows.',
+        badge: 'Industry Tested'
       },
       {
         id: 'ui-ux-design',
-        category: 'UI/UX & Product Thinking',
-        title: 'UI/UX Design & User Research',
+        category: 'Product & Visual Design',
+        title: 'UI/UX Design & Prototyping',
         description:
-          'Conducting user research, SUS (System Usability Scale) testing, wireframing, and interactive prototyping in Figma to ensure rapid user adoption.',
+          'Information architecture, user flow mapping, mobile-first wireframing, and interactive prototyping in Figma alongside visual data infographics in Canva.',
         badge: 'High Usability'
       }
     ],
     
-    experienceTitle: 'Professional Experience & Career History',
+    experienceTitle: 'Work & Professional Experience',
     experienceMeta: 'Career Timeline',
     contactTitle: 'Let’s Build Something Together',
-    contactSubtitle: 'Interested in discussing digitalization, enterprise systems, or modern full-stack web applications? Feel free to reach out.',
-    contactAvailable: 'Status: Open for Industrial Collaborations & Roles',
+    contactSubtitle: 'Interested in discussing career opportunities, geospatial data projects (GIS), or modern web development? Feel free to reach out.',
+    contactAvailable: 'Status: Open for Collaborations & New Opportunities',
     contactDirectHeading: 'Direct Contact',
     contactDirectDesc: 'Reach out via personal email or LinkedIn:',
     contactPhoneHeading: 'WhatsApp / Phone',
-        formTitle: 'Send Direct Message',
+    formTitle: 'Send Direct Message',
     formBadge: 'MESSAGE',
     formName: 'Full Name',
     formNamePlaceholder: 'e.g. John Doe',
     formEmail: 'Email Address',
     formEmailPlaceholder: 'john@company.com',
-    formMessage: 'Message / Project Details',
-    formMessagePlaceholder: 'Write your message, inquiry, or project overview...',
+    formMessage: 'Message / Inquiries',
+    formMessagePlaceholder: 'Write your message, project details, or inquiry here...',
     formSend: 'Send Message',
     formSending: 'Sending...',
     formSuccess: 'Message sent successfully! Thank you.',
-    formError: 'Failed to send message directly. Redirecting to mail app...',
+    formError: 'Failed to send directly. Redirecting to mail app...',
     contactFormName: 'Full Name',
     contactFormEmail: 'Email Address',
     contactFormSubject: 'Subject',
     contactFormMsg: 'Message',
-    contactSendBtn: 'Send Message',
+    contactSendBtn: 'Send Message Now',
     footerRights: 'All Rights Reserved.',
-    footerTagline: 'Engineered with industrial precision and modern web design.',
-    themeLabels: { rose: 'Matcha Blush',
+    footerTagline: 'Engineered with passion for marine spatial data and modern web systems.',
+    themeLabels: {
+      soft: 'Soft Funk',
       rose: 'Matcha Blush',
-      retro: 'Retro Funk', soft: 'Soft Funk', memphis: 'Memphis', mono: 'Monochrome' }
-
+      retro: 'Retro Funk',
+      memphis: 'Memphis',
+      mono: 'Monochrome'
+    }
   }
 }
-
-
-
