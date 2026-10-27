@@ -13,11 +13,8 @@ import {
   Check,
   X,
   Compass,
-  Video,
-  Sparkles,
   FileText
 } from 'lucide-vue-next'
-import { newArmadaBriefs } from '../../data/newArmadaBriefs'
 
 const props = defineProps({
   isOpen: { type: Boolean, required: true },
@@ -54,45 +51,13 @@ const filteredItems = computed(() => {
   const q = searchQuery.value.toLowerCase().trim()
   const items = []
 
-  // 1. Brief Projek Items (New Armada)
-  items.push({
-    id: 'nav-briefs-all',
-    group: props.lang === 'id' ? 'Brief Projek (New Armada)' : 'Project Briefs (New Armada)',
-    label: props.lang === 'id' ? 'Katalog Brief Projek (1 Tahun)' : 'All 1-Year Project Briefs',
-    sublabel: 'PT Mekar Armada Jaya — Tambun',
-    icon: Sparkles,
-    action: () => {
-      window.location.href = '/porto-2.0/briefs'
-      emit('close')
-    }
-  })
-
-  newArmadaBriefs.projects.forEach((bp) => {
-    const codeMatch = bp.code.toLowerCase().includes(q)
-    const titleMatch = bp.title.toLowerCase().includes(q)
-    const taglineMatch = bp.tagline.toLowerCase().includes(q)
-    if (!q || codeMatch || titleMatch || taglineMatch) {
-      items.push({
-        id: `brief-${bp.code}`,
-        group: props.lang === 'id' ? 'Brief Projek (New Armada)' : 'Project Briefs (New Armada)',
-        label: `${bp.code}: ${bp.title}`,
-        sublabel: bp.tagline,
-        icon: FileText,
-        action: () => {
-          window.location.href = `/porto-2.0/brief-detail?id=${bp.code.toLowerCase()}`
-          emit('close')
-        }
-      })
-    }
-  })
-
-  // 2. Navigation items
+  // 1. Navigation items (Section Links)
   sections.forEach((sec) => {
     const label = props.c[sec.labelKey] || sec.id
     if (!q || label.toLowerCase().includes(q) || sec.id.toLowerCase().includes(q)) {
       items.push({
         id: `nav-${sec.id}`,
-        group: props.lang === 'id' ? 'Navigasi' : 'Navigation',
+        group: props.lang === 'id' ? 'Navigasi Halaman' : 'Navigation',
         label: label,
         sublabel: `#${sec.id}`,
         icon: sec.icon,
@@ -104,16 +69,16 @@ const filteredItems = computed(() => {
     }
   })
 
-  // 3. Project items
+  // 2. Project items (Annisa's 4 Projects)
   props.projects.forEach((proj) => {
     const titleMatch = proj.title.toLowerCase().includes(q)
     const tagsMatch = proj.tags?.some((t) => t.toLowerCase().includes(q))
     if (!q || titleMatch || tagsMatch) {
       items.push({
         id: `proj-${proj.title}`,
-        group: props.lang === 'id' ? 'Proyek' : 'Projects',
+        group: props.lang === 'id' ? 'Portofolio Proyek' : 'Projects',
         label: proj.title,
-        sublabel: proj.eyebrow || proj.year,
+        sublabel: proj.role || proj.year,
         icon: FolderGit2,
         action: () => {
           emit('selectProject', proj)
@@ -123,17 +88,17 @@ const filteredItems = computed(() => {
     }
   })
 
-  // 4. Action items
+  // 3. Action items (Email, CV, LinkedIn, Theme, Lang)
   const actions = [
     {
       id: 'act-copy-email',
-      group: props.lang === 'id' ? 'Aksi' : 'Actions',
-      label: props.c.cmdCopyEmail,
-      sublabel: 'abdidzikry3123@gmail.com',
+      group: props.lang === 'id' ? 'Aksi Cepat' : 'Quick Actions',
+      label: props.c.cmdCopyEmail || 'Salin Email',
+      sublabel: 'annisa.m.sabilla@gmail.com',
       icon: emailCopied.value ? Check : Mail,
       action: async () => {
         try {
-          await navigator.clipboard.writeText('abdidzikry3123@gmail.com')
+          await navigator.clipboard.writeText('annisa.m.sabilla@gmail.com')
           emailCopied.value = true
           setTimeout(() => {
             emailCopied.value = false
@@ -143,21 +108,10 @@ const filteredItems = computed(() => {
       }
     },
     {
-      id: 'act-book-call',
-      group: props.lang === 'id' ? 'Aksi' : 'Actions',
-      label: props.c.cmdMeeting || 'Jadwalkan Panggilan (Google Meet)',
-      sublabel: '30 Min Technical Discussion',
-      icon: Video,
-      action: () => {
-        window.open('https://calendar.app.google/yND5q1Mz91fp9CP8A', '_blank')
-        emit('close')
-      }
-    },
-    {
       id: 'act-download-cv',
-      group: props.lang === 'id' ? 'Aksi' : 'Actions',
-      label: props.c.cmdDownloadResume,
-      sublabel: 'PDF Document',
+      group: props.lang === 'id' ? 'Aksi Cepat' : 'Quick Actions',
+      label: props.c.ctaDownloadCv || 'Unduh CV ATS (PDF)',
+      sublabel: 'CV Annisa Maulana Sabilla ATS.pdf',
       icon: Download,
       action: () => {
         window.open('/cv.pdf', '_blank')
@@ -165,21 +119,10 @@ const filteredItems = computed(() => {
       }
     },
     {
-      id: 'act-toggle-theme',
-      group: props.lang === 'id' ? 'Aksi' : 'Actions',
-      label: props.c.cmdToggleTheme,
-      sublabel: `Current: ${props.themePref}`,
-      icon: props.themePref === 'dark' ? Sun : Moon,
-      action: () => {
-        const next = props.themePref === 'dark' ? 'light' : 'dark'
-        emit('applyTheme', next)
-      }
-    },
-    {
       id: 'act-toggle-lang',
-      group: props.lang === 'id' ? 'Aksi' : 'Actions',
-      label: props.c.cmdToggleLang,
-      sublabel: props.lang === 'id' ? 'Bahasa Indonesia -> English' : 'English -> Bahasa Indonesia',
+      group: props.lang === 'id' ? 'Aksi Cepat' : 'Quick Actions',
+      label: props.c.cmdToggleLang || 'Ganti Bahasa',
+      sublabel: props.lang === 'id' ? 'Bahasa Indonesia → English' : 'English → Bahasa Indonesia',
       icon: Languages,
       action: () => {
         emit('toggleLang')
@@ -199,9 +142,7 @@ const filteredItems = computed(() => {
 const groupedItems = computed(() => {
   const groups = {}
   filteredItems.value.forEach((item, index) => {
-    if (!groups[item.group]) {
-      groups[item.group] = []
-    }
+    if (!groups[item.group]) groups[item.group] = []
     groups[item.group].push({ ...item, globalIndex: index })
   })
   return groups
@@ -226,9 +167,7 @@ const handleKeyDown = (e) => {
   } else if (e.key === 'Enter') {
     e.preventDefault()
     const item = filteredItems.value[selectedIndex.value]
-    if (item) {
-      item.action()
-    }
+    if (item) item.action()
   }
 }
 
@@ -243,7 +182,6 @@ const scrollToSelected = () => {
   })
 }
 
-// Mencegah scroll body / home saat popup terbuka & atasi Lenis interference
 watch(
   () => props.isOpen,
   (val) => {
@@ -254,9 +192,7 @@ watch(
       document.body.style.overflow = 'hidden'
       document.documentElement.style.overflow = 'hidden'
       nextTick(() => {
-        if (inputRef.value) {
-          inputRef.value.focus()
-        }
+        if (inputRef.value) inputRef.value.focus()
       })
     } else {
       window.removeEventListener('keydown', handleKeyDown)
@@ -296,7 +232,7 @@ onUnmounted(() => {
         data-lenis-prevent
       >
         <!-- Search Input Bar -->
-        <div class="flex items-center gap-3 px-4 py-3.5 border-b-2 border-[var(--comic-border)] bg-[var(--canvas-bg)] shrink-0">
+        <div class="p-4 border-b-2 border-[var(--comic-border)] flex items-center gap-3 bg-[var(--surface-subtle)]">
           <Search class="w-5 h-5 text-[var(--brand-coral)] shrink-0" aria-hidden="true" />
           <input
             ref="inputRef"
@@ -304,7 +240,7 @@ onUnmounted(() => {
             type="text"
             id="cmd-palette-title"
             class="w-full bg-transparent font-medium text-[var(--ink-primary)] placeholder-[var(--ink-muted)] text-sm sm:text-base outline-none"
-            :placeholder="c.cmdPrompt || 'Cari proyek, brief new armada, aksi...'"
+            :placeholder="c.cmdPrompt || 'Cari proyek, keahlian, aksi...'"
             autocomplete="off"
             spellcheck="false"
           />
@@ -313,7 +249,7 @@ onUnmounted(() => {
           </kbd>
         </div>
 
-        <!-- Scrollable Results List (Isolasi Scroll dengan data-lenis-prevent & overscroll-contain) -->
+        <!-- Scrollable Results Container -->
         <div
           ref="listContainerRef"
           class="max-h-[380px] overflow-y-auto p-2.5 flex flex-col gap-3 custom-scrollbar overscroll-contain"
@@ -321,17 +257,26 @@ onUnmounted(() => {
           data-lenis-prevent
           @wheel.stop
         >
-          <div v-if="filteredItems.length === 0" class="p-8 text-center text-sm font-mono text-[var(--ink-muted)]">
-            Tidak ada hasil untuk "{{ searchQuery }}"
+          <!-- Empty State -->
+          <div
+            v-if="filteredItems.length === 0"
+            class="p-8 text-center text-xs sm:text-sm text-[var(--ink-muted)] font-mono"
+          >
+            {{ c.cmdNoResults || 'Tidak ada hasil untuk' }} "{{ searchQuery }}"
           </div>
 
-          <div v-for="(groupItems, groupName) in groupedItems" :key="groupName" class="flex flex-col gap-1">
-            <span class="font-mono text-[10px] font-black uppercase tracking-wider text-[var(--ink-muted)] px-3 py-1">
+          <!-- Grouped Results -->
+          <div
+            v-for="(groupList, groupName) in groupedItems"
+            :key="groupName"
+            class="flex flex-col gap-1"
+          >
+            <span class="text-[10px] font-mono font-bold uppercase tracking-wider text-[var(--ink-muted)] px-3 py-1">
               // {{ groupName }}
             </span>
 
             <button
-              v-for="item in groupItems"
+              v-for="item in groupList"
               :key="item.id"
               type="button"
               :aria-selected="selectedIndex === item.globalIndex"
@@ -386,7 +331,7 @@ onUnmounted(() => {
             <span>↑↓ Navigasi</span>
             <span>↵ Pilih</span>
           </div>
-          <span>PT Mekar Armada Jaya & Portfolio</span>
+          <span>Annisa Maulana Sabilla • Portfolio</span>
         </div>
       </div>
     </div>
