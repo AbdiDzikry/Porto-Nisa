@@ -13,6 +13,7 @@ import About from './components/sections/About.vue'
 import Works from './components/sections/Works.vue'
 import Skills from './components/sections/Skills.vue'
 import Experience from './components/sections/Experience.vue'
+import Gallery from './components/sections/Gallery.vue'
 import Contact from './components/sections/Contact.vue'
 import Footer from './components/layout/Footer.vue'
 import SpecDrawer from './components/ui/SpecDrawer.vue'
@@ -146,7 +147,7 @@ const goToSection = (id) => {
 // Intersection Observer for Active Navigation
 // -----------------------------------------------------------------
 const updateActiveSection = () => {
-  const sections = ['home', 'about', 'works', 'skills', 'experience', 'contact']
+  const sections = ['home', 'about', 'works', 'skills', 'experience', 'gallery', 'contact']
   const scrollPosition = window.scrollY + 180
   let current = 'home'
 
@@ -275,7 +276,7 @@ watch(lang, () => {
     <Skills :c="c" :profile="profile" />
     
     <Experience :c="c" :profile="profile" />
-    
+    <Gallery :c="c" />
     <Contact :c="c" :profile="profile" />
   </main>
 

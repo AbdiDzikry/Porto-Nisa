@@ -16,6 +16,10 @@ export const copy = {
     briefsLabel: 'Brief Projek',
     skillsLabel: 'Keahlian',
     experienceLabel: 'Pengalaman',
+    galleryLabel: 'Galeri',
+    galleryMeta: 'Dokumentasi & Jejak Lapangan',
+    galleryTitle: 'Galeri Aktivitas & Magang',
+    gallerySubtitle: 'Dokumentasi kegiatan kerja praktik di BUMN, industri manufaktur, dan pelatihan vokasi kompetensi.',
     contactLabel: 'Kontak',
 
     cmdBadge: 'Indeks',
@@ -157,6 +161,10 @@ export const copy = {
     briefsLabel: 'Project Briefs',
     skillsLabel: 'Skills',
     experienceLabel: 'Experience',
+    galleryLabel: 'Gallery',
+    galleryMeta: 'Activities & Field Record',
+    galleryTitle: 'Internship & Activity Gallery',
+    gallerySubtitle: 'Photo documentation from state-owned enterprises, manufacturing, and vocational certifications.',
     contactLabel: 'Contact',
 
     cmdBadge: 'Index',

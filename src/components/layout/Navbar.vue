@@ -143,6 +143,18 @@ const handleMobileNav = (section) => {
       >
         {{ c.experienceLabel }}
       </button>
+      <button 
+        type="button" 
+        :class="[
+          'inline-flex items-center justify-center min-w-[96px] h-8 px-3 rounded-full text-xs font-black uppercase tracking-wider border border-[var(--comic-border)] transition-all cursor-pointer',
+          activeSection === 'gallery'
+            ? 'bg-[var(--brand-coral)] text-white shadow-[2px_2px_0px_var(--comic-border)] -translate-y-0.5'
+            : 'bg-[var(--surface-panel)] text-[var(--ink-primary)] hover:bg-[var(--surface-subtle)] hover:text-[var(--brand-coral)] shadow-[1.5px_1.5px_0px_var(--comic-border)] hover:-translate-y-0.5 hover:shadow-[2px_2px_0px_var(--comic-border)]'
+        ]" 
+        @click="emit('goToSection', 'gallery')"
+      >
+        {{ c.galleryLabel || 'Galeri' }}
+      </button>
     </nav>
 
     <!-- Right Controls: Theme Selector, Language Toggle, and Mobile Hamburger -->
