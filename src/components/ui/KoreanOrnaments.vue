@@ -1,75 +1,75 @@
 <script setup>
-// Korean Ornaments - Only visible and active when theme is 'rose' (Matcha Blush)
+defineProps({
+  themePref: { type: String, required: true }
+})
 </script>
 
 <template>
-  <div class="korean-ornaments-root pointer-events-none select-none" aria-hidden="true">
-    <!-- Top-Right Floating Korean Cloud & Hangul Decal -->
-    <div class="fixed top-24 right-4 sm:right-10 z-0 opacity-40 hover:opacity-80 transition-opacity duration-300">
-      <div class="flex flex-col items-center gap-1.5 font-mono text-[11px] font-black tracking-widest text-[var(--brand-mint)] bg-[var(--surface-panel)] border border-[var(--comic-border)] px-2.5 py-2 rounded-2xl shadow-[2px_2px_0px_var(--comic-border)]">
-        <span class="text-xs">말차</span>
-        <span class="w-1.5 h-1.5 rounded-full bg-[var(--brand-pink)]"></span>
-        <span class="text-[9px] uppercase tracking-normal font-sans text-[var(--ink-muted)]">Matcha</span>
+  <!-- Korean Ornaments for Matcha Theme (themePref === 'rose') -->
+  <div
+    v-if="themePref === 'rose'"
+    class="korean-ornaments-root pointer-events-none select-none z-20"
+    aria-hidden="true"
+  >
+    <!-- 1. Top-Right Floating Korean Decal Sticker (Aesthetic Webtoon Pill) -->
+    <div class="fixed top-24 right-4 sm:right-8 z-30 transition-transform hover:scale-105 duration-300">
+      <div class="flex items-center gap-2 bg-[#F3F8F2] border-2 border-[#2A3D36] px-3.5 py-1.5 rounded-full shadow-[2.5px_2.5px_0px_#2A3D36]">
+        <span class="w-2.5 h-2.5 rounded-full bg-[#84A59D] border border-[#2A3D36] animate-pulse"></span>
+        <span class="font-bold text-xs text-[#264653] font-sans tracking-wide">말차 • Matcha Mood</span>
+        <span class="text-[10px] bg-[#D9777F] text-white font-mono px-1.5 py-0.5 rounded border border-[#2A3D36] shadow-[1px_1px_0px_#2A3D36]">KR</span>
       </div>
     </div>
 
-    <!-- Korean Floral / Plum Blossom (Maehwa) Floating Accent Left -->
-    <div class="fixed bottom-28 left-4 sm:left-8 z-0 opacity-45">
-      <div class="relative w-12 h-12 flex items-center justify-center">
-        <!-- SVG 5-Petal Korean Blossom -->
-        <svg viewBox="0 0 100 100" class="w-full h-full text-[var(--brand-pink)] drop-shadow-[1px_1px_0px_var(--comic-border)] animate-spin-very-slow fill-current">
-          <circle cx="50" cy="28" r="18" fill="currentColor" />
-          <circle cx="71" cy="43" r="18" fill="currentColor" />
-          <circle cx="63" cy="68" r="18" fill="currentColor" />
-          <circle cx="37" cy="68" r="18" fill="currentColor" />
-          <circle cx="29" cy="43" r="18" fill="currentColor" />
-          <circle cx="50" cy="50" r="11" fill="var(--brand-butter)" stroke="var(--comic-border)" stroke-width="3" />
+    <!-- 2. Korean Plum Blossom (Maehwa 5-Petals Floral) on Left Bottom -->
+    <div class="fixed bottom-24 left-4 sm:left-8 z-30">
+      <div class="relative w-14 h-14 flex items-center justify-center p-1 bg-[#F3F8F2]/90 border-2 border-[#2A3D36] rounded-2xl shadow-[3px_3px_0px_#2A3D36]">
+        <svg viewBox="0 0 100 100" class="w-full h-full text-[#D9777F] animate-spin-very-slow fill-current">
+          <circle cx="50" cy="24" r="19" fill="#D9777F" stroke="#2A3D36" stroke-width="2.5" />
+          <circle cx="75" cy="42" r="19" fill="#D9777F" stroke="#2A3D36" stroke-width="2.5" />
+          <circle cx="65" cy="73" r="19" fill="#D9777F" stroke="#2A3D36" stroke-width="2.5" />
+          <circle cx="35" cy="73" r="19" fill="#D9777F" stroke="#2A3D36" stroke-width="2.5" />
+          <circle cx="25" cy="42" r="19" fill="#D9777F" stroke="#2A3D36" stroke-width="2.5" />
+          <circle cx="50" cy="50" r="13" fill="#F6BD60" stroke="#2A3D36" stroke-width="3" />
         </svg>
       </div>
     </div>
 
-    <!-- Korean Traditional Cloud (Gureum) Floating Ambient Decor (Right Mid) -->
-    <div class="fixed top-1/2 right-3 sm:right-6 -translate-y-1/2 z-0 opacity-35 hidden md:block">
-      <svg width="68" height="42" viewBox="0 0 68 42" fill="none" class="text-[var(--brand-mint)]">
-        <path
-          d="M16 34C10.4772 34 6 29.5228 6 24C6 19.3431 9.18247 15.4312 13.5 14.3033C14.7176 8.35821 19.9861 4 26.25 4C32.062 4 37.0182 7.76569 38.6471 13.067C40.0901 12.383 41.7246 12 43.4444 12C49.2741 12 54 16.701 54 22.5C54 23.0159 53.963 23.5232 53.8916 24.0192C57.4042 24.8967 60 28.0583 60 31.8182C60 36.3368 56.3262 40 51.7931 40H16C12.6863 40 10 37.3137 10 34"
-          stroke="var(--comic-border)"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          fill="var(--surface-subtle)"
-        />
-      </svg>
-    </div>
-
-    <!-- Korean Traditional Corner Lattice Knot (Dancheong / Changhoji Grid Pattern Top-Left) -->
-    <div class="fixed top-20 left-4 z-0 opacity-25 hidden lg:block">
-      <div class="w-14 h-14 border-t-2 border-l-2 border-[var(--brand-mint)] relative">
-        <div class="absolute top-1 left-1 w-6 h-6 border-t border-l border-[var(--brand-pink)]"></div>
-        <div class="absolute top-3 left-3 w-2 h-2 rounded-full bg-[var(--brand-coral)]"></div>
+    <!-- 3. Korean Traditional Cloud (Gureum) Floating Ambient Decor (Mid Right) -->
+    <div class="fixed top-1/2 right-4 -translate-y-1/2 z-20 hidden md:block">
+      <div class="bg-[#F3F8F2] border-2 border-[#2A3D36] rounded-2xl p-2.5 shadow-[3px_3px_0px_#2A3D36] flex items-center gap-2">
+        <svg width="44" height="28" viewBox="0 0 68 42" fill="none" class="text-[#84A59D]">
+          <path
+            d="M16 34C10.4772 34 6 29.5228 6 24C6 19.3431 9.18247 15.4312 13.5 14.3033C14.7176 8.35821 19.9861 4 26.25 4C32.062 4 37.0182 7.76569 38.6471 13.067C40.0901 12.383 41.7246 12 43.4444 12C49.2741 12 54 16.701 54 22.5C54 23.0159 53.963 23.5232 53.8916 24.0192C57.4042 24.8967 60 28.0583 60 31.8182C60 36.3368 56.3262 40 51.7931 40H16C12.6863 40 10 37.3137 10 34"
+            stroke="#2A3D36"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            fill="#E5EFE4"
+          />
+        </svg>
+        <span class="font-mono text-[11px] font-black text-[#264653]">구름;</span>
       </div>
     </div>
 
-    <!-- Korean Stamp Seal (Dojang) Floating Bottom-Right -->
-    <div class="fixed bottom-8 right-6 z-0 opacity-40 hover:opacity-90 transition-opacity">
-      <div class="w-9 h-9 border-[1.5px] border-[var(--brand-coral)] rounded-lg flex items-center justify-center bg-[var(--surface-panel)] text-[var(--brand-coral)] font-serif font-black text-xs shadow-[1.5px_1.5px_0px_var(--comic-border)]">
-        안사
+    <!-- 4. Korean Dojang (Traditional Red Seal Stamp) on Bottom Right -->
+    <div class="fixed bottom-6 right-6 z-30">
+      <div class="w-11 h-11 border-2 border-[#D9777F] rounded-xl flex flex-col items-center justify-center bg-[#F3F8F2] text-[#D9777F] shadow-[2.5px_2.5px_0px_#2A3D36]">
+        <span class="font-black text-[13px] leading-tight">안사</span>
+        <span class="font-mono text-[7px] font-bold uppercase tracking-wider text-[#264653]">SEAL</span>
+      </div>
+    </div>
+
+    <!-- 5. Korean Lattice (Changhoji) Corner Ornament (Top Left) -->
+    <div class="fixed top-20 left-4 z-20 hidden lg:block">
+      <div class="w-10 h-10 border-t-2 border-l-2 border-[#84A59D] relative">
+        <div class="absolute top-1.5 left-1.5 w-5 h-5 border-t border-l border-[#D9777F]"></div>
+        <div class="absolute top-3.5 left-3.5 w-2 h-2 rounded-full bg-[#E07A5F]"></div>
       </div>
     </div>
   </div>
 </template>
 
 <style scoped>
-/* Hidden by default on non-rose themes */
-.korean-ornaments-root {
-  display: none;
-}
-
-/* Enabled strictly when theme is 'rose' (Matcha Blush) */
-:global([data-theme="rose"]) .korean-ornaments-root {
-  display: block;
-}
-
 @keyframes spinVerySlow {
   from {
     transform: rotate(0deg);
@@ -80,6 +80,6 @@
 }
 
 .animate-spin-very-slow {
-  animation: spinVerySlow 45s linear infinite;
+  animation: spinVerySlow 35s linear infinite;
 }
 </style>

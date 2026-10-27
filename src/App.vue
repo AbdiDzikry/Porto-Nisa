@@ -209,7 +209,7 @@ onMounted(async () => {
   let pref = 'soft'
   try {
     const saved = localStorage.getItem('portfolio-theme')
-    if (saved === 'auto' || saved === 'soft' || saved === 'retro' || saved === 'memphis' || saved === 'mono') pref = saved
+    if (saved === 'auto' || saved === 'soft' || saved === 'rose' || saved === 'retro' || saved === 'memphis' || saved === 'mono') pref = saved
   } catch (_) {}
   applyTheme(pref)
 
@@ -306,7 +306,7 @@ watch(lang, () => {
     @toggleLang="toggleLang"
   />
   <!-- Korean Aesthetic Ornaments for Matcha Theme -->
-  <KoreanOrnaments />
+  <KoreanOrnaments :themePref="themePref" />
 </template>
 
 <style>
