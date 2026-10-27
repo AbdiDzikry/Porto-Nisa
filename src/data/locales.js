@@ -2,10 +2,10 @@ export const copy = {
   id: {
     skip: 'Lewati ke konten utama',
     issue: 'Log Digitalisasi & Rekayasa Data',
-    eyebrow: 'Marine Information Systems & Spatial Web Specialist',
-    coverHeadline: ['Annisa Maulana Sabilla;', 'Marine Information Systems & Spatial Web Specialist'],
+    eyebrow: 'Information Systems, HRIS & Spatial Data Specialist',
+    coverHeadline: ['Annisa Maulana Sabilla;', 'Information Systems, HRIS & Spatial Data Specialist'],
     coverBody:
-      'Lulusan Sistem Informasi Kelautan UPI dengan pengalaman di bidang analisis data spasial (GIS), digitalisasi kearsipan BUMN di PT Pelindo (Persero), otomasi data QC di PT Astra Honda Motor, serta rekayasa aplikasi web modern (React.js & Leaflet).',
+      'Lulusan Sistem Informasi Kelautan UPI dengan kompetensi terintegrasi di bidang Information Systems, tata kelola HRIS & Manajemen Kearsipan BUMN (PT Pelindo), otomatisasi data operasional di PT Astra Honda Motor, analisis data spasial (GIS), serta pengembangan aplikasi web interaktif.',
     ctaView: 'Lihat Proyek Saya',
     ctaContact: 'Hubungi Saya',
     ctaDownloadCv: 'Unduh CV ATS (PDF)',
@@ -31,7 +31,7 @@ export const copy = {
     cmdToggleLang: 'Ganti Bahasa (ID/EN)',
     quickStatsGpa: 'S1 Sistem Informasi Kelautan (UPI)',
     quickStatsPkg: 'Top 10 Inovasi Maritim & BNSP Certified',
-    quickStatsRole: 'Marine GIS & Spatial Web Specialist',
+    quickStatsRole: 'HRIS, Data & Systems Specialist',
 
     aboutTitle: 'Mengenal saya lebih dekat.',
     aboutBodyP1:
@@ -44,7 +44,7 @@ export const copy = {
     highlightsBadge: 'PROFIL',
     highlights: [
       { label: 'Pendidikan', value: 'S1 Sistem Informasi Kelautan — Universitas Pendidikan Indonesia (2022–2026)' },
-      { label: 'Fokus Utama', value: 'Marine WebGIS, Spatial Analytics, Corporate Archiving & Frontend Web' },
+      { label: 'Fokus Utama', value: 'HRIS & Corporate Archiving, Information Systems, Spatial GIS & Web Engineering' },
       { label: 'Sertifikasi', value: 'BNSP IT Software Programming for Business (BBPVP Bekasi)' },
       { label: 'Pengalaman Kerja', value: 'PT Pelindo (Persero), BPS Kab. Bekasi, PT Astra Honda Motor, PT Supernova' }
     ],
@@ -65,6 +65,13 @@ export const copy = {
     skillsSub: 'Bidang Utama',
     skillsItems: [
       {
+        id: 'hris-archiving',
+        category: 'Human Resources & Corporate Governance',
+        title: 'HRIS & Corporate Archival Governance',
+        description:
+          'Tata kelola data kepegawaian (HRIS), klasifikasi dan penataan 1.027 box arsip & 9.164 folder, pemrosesan 95.748 entri digital arsip inaktif Pelindo, serta administrasi kepatuhan SDM & HRGA.',
+        badge: 'Enterprise HRIS'
+      },      {
         id: 'gis-spatial',
         category: 'Geographic Information Systems (GIS)',
         title: 'Marine WebGIS & Spatial Analysis',
@@ -136,10 +143,10 @@ export const copy = {
   en: {
     skip: 'Skip to main content',
     issue: 'Data Engineering & Digitalization Log',
-    eyebrow: 'Marine Information Systems & Spatial Web Specialist',
-    coverHeadline: ['Annisa Maulana Sabilla;', 'Marine Information Systems & Spatial Web Specialist'],
+    eyebrow: 'Information Systems, HRIS & Spatial Data Specialist',
+    coverHeadline: ['Annisa Maulana Sabilla;', 'Information Systems, HRIS & Spatial Data Specialist'],
     coverBody:
-      'Marine Information Systems graduate from Universitas Pendidikan Indonesia (UPI) specializing in spatial data engineering (GIS), corporate digital archiving at PT Pelindo (Persero), QC data automation at PT Astra Honda Motor, and modern web application development.',
+      'Information Systems graduate from UPI combining competencies in HRIS administration and corporate archival governance at PT Pelindo (Persero), operational data automation at PT Astra Honda Motor, spatial GIS analytics, and modern web engineering.',
     ctaView: 'Explore Projects',
     ctaContact: 'Contact Me',
     ctaDownloadCv: 'Download ATS CV (PDF)',
@@ -165,7 +172,7 @@ export const copy = {
     cmdToggleLang: 'Switch Language (EN/ID)',
     quickStatsGpa: 'B.S. Marine Information Systems (UPI)',
     quickStatsPkg: 'Top 10 Maritime Innovation & BNSP Certified',
-    quickStatsRole: 'Marine GIS & Spatial Web Specialist',
+    quickStatsRole: 'HRIS, Data & Systems Specialist',
 
     aboutTitle: 'Getting to know me better.',
     aboutBodyP1:
@@ -178,7 +185,7 @@ export const copy = {
     highlightsBadge: 'PROFILE',
     highlights: [
       { label: 'Education', value: 'B.S. Marine Information Systems — Universitas Pendidikan Indonesia (2022–2026)' },
-      { label: 'Core Focus', value: 'Marine WebGIS, Spatial Analytics, Corporate Archiving & Frontend Web' },
+      { label: 'Core Focus', value: 'HRIS & Corporate Archiving, Information Systems, Spatial GIS & Web Engineering' },
       { label: 'Certification', value: 'BNSP IT Software Programming for Business (BBPVP Bekasi)' },
       { label: 'Industry Track Record', value: 'PT Pelindo (Persero), BPS Bekasi Regency, PT Astra Honda Motor, PT Supernova' }
     ],
@@ -199,6 +206,13 @@ export const copy = {
     skillsSub: 'Core Competencies',
     skillsItems: [
       {
+        id: 'hris-archiving',
+        category: 'Human Resources & Corporate Governance',
+        title: 'HRIS & Corporate Archival Governance',
+        description:
+          'Tata kelola data kepegawaian (HRIS), klasifikasi dan penataan 1.027 box arsip & 9.164 folder, pemrosesan 95.748 entri digital arsip inaktif Pelindo, serta administrasi kepatuhan SDM & HRGA.',
+        badge: 'Enterprise HRIS'
+      },      {
         id: 'gis-spatial',
         category: 'Geographic Information Systems (GIS)',
         title: 'Marine WebGIS & Spatial Analysis',

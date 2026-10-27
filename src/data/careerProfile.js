@@ -1,9 +1,9 @@
 const careerProfileSource = {
   id: {
     heroLabel: 'Perjalanan Profesional & Keahlian',
-    heroTitle: 'Mengintegrasikan Sistem Informasi Kelautan, Data Spasial GIS, & Pengembangan Web Modern.',
+    heroTitle: 'Mengintegrasikan Tata Kelola HRIS, Kearsipan Korporat, & Rekayasa Sistem Informasi.',
     heroSummary:
-      'Lulusan Sistem Informasi Kelautan Universitas Pendidikan Indonesia (UPI) dengan pengalaman komprehensif di bidang rekayasa data spasial, kearsipan korporat & HRIS di PT Pelindo (Persero), otomasi data QC di PT Astra Honda Motor, serta pengolahan statistik di BPS. Memiliki sertifikasi resmi BNSP di bidang IT Software Programming for Business.',
+      'Lulusan Sistem Informasi Kelautan UPI dengan keahlian hybrid yang kuat di ranah Human Resource Information System (HRIS), manajemen kearsipan korporat, pengolahan data analitis, serta pengembangan sistem web. Memiliki rekam jejak mengelola 95.748 data arsip kepegawaian di PT Pelindo (Persero), administrasi HRGA di PT Supernova, otomasi data inspeksi di PT Astra Honda Motor, serta tersertifikasi BNSP.',
     quickFactsLabel: 'Fakta Singkat',
     quickFacts: [
       'S1 Sistem Informasi Kelautan, Universitas Pendidikan Indonesia (2022 - 2026)',
@@ -99,7 +99,7 @@ const careerProfileSource = {
   },
   en: {
     heroLabel: 'Professional Journey & Expertise',
-    heroTitle: 'Bridging Marine Information Systems, Spatial Data Analytics, & Web Development.',
+    heroTitle: 'Bridging HRIS Governance, Enterprise Archiving, & Information Systems Engineering.',
     heroSummary:
       'Marine Information Systems graduate from Universitas Pendidikan Indonesia (UPI) experienced in geospatial data engineering, corporate archiving & HRIS at PT Pelindo (Persero), QC data automation at PT Astra Honda Motor, and regional statistics at BPS. Formally certified by BNSP in IT Software Programming for Business.',
     quickFactsLabel: 'Quick Facts',
