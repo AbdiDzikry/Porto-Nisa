@@ -1,0 +1,473 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ==========================================================================
+   PORTFOLIO 2 THEME SYSTEM
+   1. RETRO FUNK (Default)
+   2. SOFT FUNK (Soft Neo-Brutalism & Warm Pastel)
+   3. MEMPHIS (Memphis Energy, Retro Pop & Bold Geometric Accents)
+   ========================================================================== */
+
+@layer base {
+  /* ========================================================================
+     THEME 1: RETRO FUNK (Default)
+     ======================================================================== */
+  :root,
+  [data-theme="retro"] {
+    --canvas-bg: #FCFBF7;
+    --surface-panel: #FFFFFF;
+    --surface-subtle: #F4F1EA;
+    --surface-sunken: #EDE8DE;
+
+    --comic-ink: #1E2132;
+    --comic-border: #1E2132;
+
+    --ink-primary: #1E2132;
+    --ink-muted: #56596E;
+    --ink-subtle: #85899E;
+    --ink-inverse: #FFFFFF;
+    --text-on-brand: #1E2132;
+
+    /* Retro Funk Colors */
+    --brand-coral: #FF4B6E;        /* Signature Logo Coral Pink */
+    --brand-mint: #38B28B;         /* Fresh Sage/Mint */
+    --brand-sun: #FFC038;          /* Daisy Sunlight Yellow */
+    --brand-sky: #4D96FF;          /* Crisp Sky Blue */
+    --brand-pink: #FF4B6E;
+    --brand-peach: #FFCDB2;
+    --brand-butter: #FFC038;
+    --brand-lavender: #4D96FF;
+
+    /* Solid Straight Shadows */
+    --shadow-comic: 2.5px 2.5px 0px var(--comic-border);
+    --shadow-comic-lg: 4px 4px 0px var(--comic-border);
+    --shadow-comic-hover: 3.5px 3.5px 0px var(--comic-border);
+    --shadow-btn: 2px 2px 0px var(--comic-border);
+    --shadow-card: 3px 3px 0px var(--comic-border);
+    --focus-ring: #FF4B6E;
+
+    --font-system: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
+    --font-spec: 'JetBrains Mono Variable', ui-monospace, monospace;
+    --font-editorial: 'Fraunces Variable', ui-serif, Georgia, serif;
+
+    color-scheme: light;
+  }
+
+  /* ========================================================================
+     THEME 2: SOFT FUNK (Soft Pastel & Warm Cream)
+     ======================================================================== */
+  [data-theme="soft"] {
+    /* 1. Palette Utama */
+    --brand-pink: #FF8FAB;
+    --brand-peach: #FFCDB2;
+    --brand-butter: #FFF1A8;
+    --brand-mint: #B8E0D2;
+    --brand-lavender: #9B8AC4;
+
+    --brand-coral: var(--brand-pink);
+    --brand-sun: var(--brand-butter);
+    --brand-sky: var(--brand-lavender);
+
+    /* 2. Surfaces */
+    --canvas-bg: #FFF9F6;            /* Warm Cream */
+    --surface-panel: #FFFFFF;
+    --surface-subtle: #F8EEE9;
+    --surface-sunken: #EEE6E2;
+    --surface-pink: #FFF0F3;
+    --surface-peach: #FFF1E8;
+    --surface-mint: #EAF6F1;
+    --surface-lavender: #F0ECF8;
+
+    /* 3. Inks & Text */
+    --ink-primary: #3C334A;
+    --ink-muted: #65566B;
+    --ink-subtle: #766C7D;
+    --ink-inverse: #FFFFFF;
+    --text-link: #65558F;
+    --text-on-pastel: #3C334A;
+    --text-on-brand: #3C334A;
+
+    /* 4. Comic Borders & Shadows */
+    --comic-border: #3C334A;
+    --comic-ink: #3C334A;
+    --shadow-comic: 2.5px 2.5px 0px #3C334A;
+    --shadow-comic-lg: 4px 4px 0px #3C334A;
+    --shadow-comic-hover: 3.5px 3.5px 0px #3C334A;
+    --shadow-btn: 2px 2px 0px #3C334A;
+    --shadow-card: 3px 3px 0px #3C334A;
+    --focus-ring: #9B8AC4;
+
+    color-scheme: light;
+  }
+
+  /* ========================================================================
+     THEME 3: MEMPHIS (Memphis Energy + Neo-Brutalism + Retro Pop)
+     ======================================================================== */
+  [data-theme="memphis"] {
+    /* 1. Palette Utama (Brand Colors) */
+    --brand-tomato: #FF595E;
+    --brand-yellow: #FFCA3A;
+    --brand-lime: #8AC926;
+    --brand-blue: #1982C4;
+    --brand-violet: #9B5DE5;
+
+    /* Compatibility Mappings */
+    --brand-coral: var(--brand-tomato);
+    --brand-sun: var(--brand-yellow);
+    --brand-mint: var(--brand-lime);
+    --brand-sky: var(--brand-blue);
+    --brand-pink: var(--brand-tomato);
+    --brand-lavender: var(--brand-violet);
+
+    /* 2. Surfaces & Canvas (Warm Paper) */
+    --canvas-bg: #FFFDF5;            /* Warm Paper */
+    --surface-panel: #FFFFFF;
+    --surface-subtle: #F4F0E6;
+    --surface-sunken: #EAE5D9;
+    --surface-tomato: #FFF0ED;
+    --surface-yellow: #FFF5D6;
+    --surface-lime: #F1F8E5;
+    --surface-blue: #EAF4FC;
+    --surface-violet: #F3EBFC;
+
+    /* 3. Inks & Text */
+    --ink-primary: #2B2D42;
+    --ink-muted: #55586B;
+    --ink-subtle: #6C6F80;
+    --ink-inverse: #FFFFFF;
+    --text-link: #14689D;
+    --text-on-brand: #2B2D42;
+
+    /* 4. Comic Border & Straight Shadows */
+    --comic-border: #2B2D42;
+    --comic-ink: #2B2D42;
+    --shadow-comic: 2.5px 2.5px 0px #2B2D42;
+    --shadow-comic-lg: 4px 4px 0px #2B2D42;
+    --shadow-comic-hover: 3.5px 3.5px 0px #2B2D42;
+    --shadow-btn: 2px 2px 0px #2B2D42;
+    --shadow-card: 3px 3px 0px #2B2D42;
+    --focus-ring: #1982C4;
+
+    /* 5. Geometric Radius */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --radius-xl: 16px;
+
+    color-scheme: light;
+  }
+
+  /* ========================================================================
+     THEME 4: MONOCHROME (Professional Monochrome — grayscale, thin borders)
+     ======================================================================== */
+  [data-theme="mono"] {
+    /* 1. Brand (grayscale ramp) */
+    --brand-ink: #171717;
+    --brand-graphite: #404040;
+    --brand-slate: #737373;
+    --brand-fog: #E5E5E5;
+
+    /* Compatibility Mappings */
+    --brand-coral: var(--brand-ink);
+    --brand-pink: var(--brand-ink);
+    --brand-mint: var(--brand-graphite);
+    --brand-sky: var(--brand-slate);
+    --brand-lavender: var(--brand-slate);
+    --brand-sun: var(--brand-fog);
+    --brand-butter: var(--brand-fog);
+    --brand-peach: #D4D4D4;
+
+    /* 2. Surfaces */
+    --canvas-bg: #FAFAFA;
+    --surface-panel: #FFFFFF;
+    --surface-subtle: #F5F5F5;
+    --surface-sunken: #E5E5E5;
+
+    /* 3. Inks */
+    --ink-primary: #171717;
+    --ink-muted: #525252;
+    --ink-subtle: #737373;
+    --ink-inverse: #FFFFFF;
+    --text-link: #404040;
+    --text-on-brand: #FFFFFF;
+
+    /* 4. Borders & Shadows (keeps the site's neo-brutalist anatomy:
+       dark 1px border + solid offset shadow, only the hue is monochrome).
+       shortcut: one --comic-border var serves both structural borders and
+       subtle dividers, so dividers are as dark as borders; split into two
+       tokens if low-contrast dividers are ever needed. */
+    --comic-border: #171717;
+    --comic-ink: #171717;
+    --shadow-comic: 2.5px 2.5px 0px var(--comic-border);
+    --shadow-comic-lg: 4px 4px 0px var(--comic-border);
+    --shadow-comic-hover: 3.5px 3.5px 0px var(--comic-border);
+    --shadow-btn: 2px 2px 0px var(--comic-border);
+    --shadow-card: 3px 3px 0px var(--comic-border);
+    --focus-ring: #525252;
+
+    color-scheme: light;
+  }
+
+  html {
+    background-color: var(--canvas-bg);
+    color: var(--ink-primary);
+    scroll-behavior: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100svh;
+    overflow-x: hidden;
+    background-color: var(--canvas-bg);
+    color: var(--ink-primary);
+    font-family: var(--font-system);
+    font-size: 15px;
+    line-height: 1.5;
+    position: relative;
+  }
+
+  /* Subtle Comic Halftone Grid Texture */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0.35;
+    background-image: radial-gradient(var(--comic-border) 0.65px, transparent 0.65px);
+    background-size: 24px 24px;
+  }
+
+  h1, h2, h3, h4, p, blockquote, figure {
+    margin: 0;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  a:focus-visible,
+  button:focus-visible,
+  [tabindex]:focus-visible {
+    outline: 2px solid var(--focus-ring);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+
+  ::selection {
+    background: var(--brand-coral);
+    color: #FFFFFF;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+}
+
+@layer components {
+  /* Containers */
+  .section-container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: clamp(60px, 7vw, 96px) clamp(20px, 5vw, 40px);
+    position: relative;
+    z-index: 2;
+  }
+
+  /* Display Typography */
+  .display-hero {
+    font-family: var(--font-system);
+    font-size: clamp(2.8rem, 6vw, 5.2rem);
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: -0.04em;
+    color: var(--ink-primary);
+  }
+
+  .display-section {
+    font-family: var(--font-system);
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    color: var(--ink-primary);
+  }
+
+  /* Comic Title with Semicolon Accent */
+  .comic-title {
+    font-weight: 900;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+  }
+  .comic-semicolon {
+    color: var(--brand-coral);
+    display: inline-block;
+  }
+
+  /* Buttons with Solid Comic Shadows */
+  .btn-comic-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: var(--brand-coral);
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 10px 22px;
+    border-radius: 12px;
+    border: 1.5px solid var(--comic-border);
+    box-shadow: var(--shadow-btn);
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+  }
+  .btn-comic-primary:hover {
+    transform: translate(-1.5px, -1.5px);
+    box-shadow: calc(var(--shadow-btn) + 1.5px);
+    background: color-mix(in srgb, var(--brand-coral) 88%, #1E2132);
+  }
+  .btn-comic-primary:active {
+    transform: translate(1.5px, 1.5px);
+    box-shadow: 0px 0px 0px var(--comic-border);
+  }
+
+  .btn-comic-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: var(--surface-panel);
+    color: var(--ink-primary);
+    font-weight: 700;
+    font-size: 14px;
+    padding: 10px 22px;
+    border-radius: 12px;
+    border: 1.5px solid var(--comic-border);
+    box-shadow: var(--shadow-btn);
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+  }
+  .btn-comic-secondary:hover {
+    transform: translate(-1.5px, -1.5px);
+    box-shadow: calc(var(--shadow-btn) + 1.5px);
+    background: var(--surface-subtle);
+  }
+  .btn-comic-secondary:active {
+    transform: translate(1.5px, 1.5px);
+    box-shadow: 0px 0px 0px var(--comic-border);
+  }
+
+  /* Comic Panels (Cards) */
+  .comic-panel {
+    background: var(--surface-panel);
+    border: 1.5px solid var(--comic-border);
+    border-radius: 20px;
+    box-shadow: var(--shadow-comic);
+    transition: transform 0.2s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.2s cubic-bezier(0.2, 0.8, 0.2, 1), border-color 0.2s ease;
+  }
+  .comic-panel:hover {
+    transform: translate(-1.5px, -1.5px);
+    box-shadow: var(--shadow-comic-hover);
+  }
+
+  /* Comic Episode Pill Badges */
+  .comic-chapter-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--font-spec);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 8px;
+    border: 1.5px solid var(--comic-border);
+    box-shadow: 2px 2px 0px var(--comic-border);
+  }
+  .comic-chapter-badge svg {
+    color: currentColor;
+    flex-shrink: 0;
+  }
+
+  .comic-tag {
+    display: inline-flex;
+    align-items: center;
+    font-family: var(--font-spec);
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 9px;
+    border-radius: 6px;
+    border: 1px solid var(--comic-border);
+    background: var(--surface-subtle);
+    color: var(--ink-primary);
+    box-shadow: 1px 1px 0px var(--comic-border);
+  }
+
+  /* Speech Bubble (Modern Webtoon Conversation Box) */
+  .speech-bubble {
+    position: relative;
+    background: var(--surface-panel);
+    border: 1.5px solid var(--comic-border);
+    border-radius: 16px;
+    padding: 16px 20px;
+    box-shadow: var(--shadow-comic);
+  }
+  .speech-bubble::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 28px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 8px 0 8px;
+    border-color: var(--comic-border) transparent transparent transparent;
+  }
+  .speech-bubble::before {
+    content: '';
+    position: absolute;
+    bottom: -7.5px;
+    left: 29px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 8px 7px 0 7px;
+    border-color: var(--surface-panel) transparent transparent transparent;
+    z-index: 1;
+  }
+
+  /* Navigation Header */
+  .top-nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px clamp(16px, 5vw, 36px);
+    background: color-mix(in srgb, var(--canvas-bg) 92%, transparent);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1.5px solid var(--comic-border);
+  }
+
+  .nav-link {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--ink-muted);
+    transition: color 150ms ease;
+    cursor: pointer;
+    position: relative;
+  }
+  .nav-link:hover, .nav-link.is-active {
+    color: var(--brand-coral);
+  }
+}

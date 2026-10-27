@@ -1,0 +1,31 @@
+{
+  "name": "portofolio",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "validate": "npm run build",
+    "avatar:sync": "node ./scripts/sync-github-avatar.mjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/fraunces": "^5.2.9",
+    "@fontsource-variable/inter": "^5.2.8",
+    "@fontsource-variable/jetbrains-mono": "^5.2.8",
+    "@studio-freight/lenis": "^1.0.42",
+    "@vueuse/core": "^10.7.0",
+    "gsap": "^3.15.0",
+    "lodash": "^4.18.1",
+    "lucide-vue-next": "^0.331.0",
+    "vue": "^3.4.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.0",
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1",
+    "vite": "^8.3.5"
+  }
+}
