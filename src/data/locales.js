@@ -125,8 +125,8 @@ export const copy = {
     footerRights: 'Hak Cipta Dilindungi.',
     footerTagline: 'Didesain dengan presisi dan dedikasi rekayasa sistem.'
 ,
-    themeLabels: { rose: 'Rose Warmth',
-      rose: 'Rose Warmth',
+    themeLabels: { rose: 'Matcha Blush',
+      rose: 'Matcha Blush',
       retro: 'Retro Funk', soft: 'Soft Funk', memphis: 'Memphis', mono: 'Monochrome' }
   },
   en: {
@@ -254,8 +254,8 @@ export const copy = {
     contactSendBtn: 'Send Message',
     footerRights: 'All Rights Reserved.',
     footerTagline: 'Engineered with industrial precision and modern web design.',
-    themeLabels: { rose: 'Rose Warmth',
-      rose: 'Rose Warmth',
+    themeLabels: { rose: 'Matcha Blush',
+      rose: 'Matcha Blush',
       retro: 'Retro Funk', soft: 'Soft Funk', memphis: 'Memphis', mono: 'Monochrome' }
 
   }

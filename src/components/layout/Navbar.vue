@@ -16,7 +16,7 @@ const isMobileMenuOpen = ref(false)
 // Theme dropdown. One control instead of a button per theme keeps the navbar short.
 const THEMES = [
   { id: 'soft', label: 'Soft', dot: '#B8E0D2' },
-  { id: 'rose', label: 'Rose', dot: '#E07A5F' },
+  { id: 'rose', label: 'Matcha', dot: '#84A59D' },
   { id: 'retro', label: 'Retro', dot: '#FFC038' },
   { id: 'memphis', label: 'Memphis', dot: '#FFCA3A' },
   { id: 'mono', label: 'Mono', dot: '#171717' }

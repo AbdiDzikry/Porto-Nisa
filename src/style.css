@@ -101,6 +101,39 @@
     color-scheme: light;
   }
 
+  /* =========================================================================
+     THEME 5: SAGE / MATCHA BLUSH (Clean Sage & Warm Rose)
+     ========================================================================= */
+  [data-theme="rose"] {
+    --brand-pink: #D9777F;
+    --brand-peach: #F6BD60;
+    --brand-butter: #F7EDE2;
+    --brand-mint: #84A59D;
+    --brand-lavender: #6D6875;
+
+    --brand-coral: #E07A5F;
+    --brand-sun: #F4A261;
+    --brand-sky: #81B29A;
+
+    --canvas-bg: #F3F8F2;            /* Fresh Matcha Light tint */
+    --surface-panel: #FFFFFF;
+    --surface-subtle: #E5EFE4;
+    --surface-sunken: #D8E6D6;
+
+    --comic-ink: #264653;
+    --comic-border: #2A3D36;
+
+    --ink-primary: #264653;
+    --ink-muted: #52796F;
+    --ink-subtle: #84A59D;
+    --ink-inverse: #FFFFFF;
+    --text-on-brand: #FFFFFF;
+
+    --shadow-color: rgba(38, 70, 83, 0.16);
+    --shadow-hard: #2A3D36;
+    --selection-bg: #84A59D;
+    --selection-text: #FFFFFF;
+  }
   /* ========================================================================
      THEME 3: MEMPHIS (Memphis Energy + Neo-Brutalism + Retro Pop)
      ======================================================================== */
