@@ -1,45 +1,51 @@
 <script setup>
-import { Camera, Sparkles, Building2 } from 'lucide-vue-next'
+import { Camera } from 'lucide-vue-next'
 
 defineProps({
   c: { type: Object, required: true }
 })
 
+// Urutan dari yang paling baru:
+// 1. Dokumentasi Profil Profesional (Foto Utama / Terkini) -> Grid Besar
+// 2. PT Pelabuhan Indonesia (Persero) (Jan 2026 - Agu 2026)
+// 3. Badan Pusat Statistik / BPS (Okt 2025 - Des 2025)
+// 4. PT Astra Honda Motor / AHM (2024 / 2025)
+// 5. BBPVP Bekasi - Pelatihan & Uji BNSP (Mar 2022 - Jun 2022)
 const galleryItems = [
+  {
+    src: '/gallery/foto pertama.jpg',
+    title: 'Annisa Maulana Sabilla',
+    role: 'Information Systems, HRIS & Spatial Data Specialist',
+    desc: 'Portret profesional dan dokumentasi dedikasi dalam tata kelola sistem informasi, administrasi kearsipan digital, dan analisis spasial.',
+    tag: 'Foto Utama'
+  },
   {
     src: '/gallery/pelind0.jpg',
     title: 'PT Pelabuhan Indonesia (Persero)',
-    role: 'Archive & HRIS Intern',
-    desc: 'Penataan arsip dokumen kepegawaian inaktif dan digitalisasi sistem kearsipan di lingkungan kantor Pelindo.',
-    tag: 'BUMN Pelindo'
+    role: 'Archive & HRIS Intern (Jan 2026 – Agu 2026)',
+    desc: 'Penataan 1.027 box arsip, 1.979 map, 9.164 folder dokumen inaktif, dan penyelesaian 95.748 entri arsip kepegawaian digital.',
+    tag: '2026 • BUMN Pelindo'
   },
   {
     src: '/gallery/bps.jpeg',
-    role: 'Design & Spatial Data Intern',
-    title: 'Badan Pusat Statistik (BPS)',
-    desc: 'Dokumentasi kegiatan pengolahan data statistik daerah dan diseminasi informasi publik MATCHAPRO.',
-    tag: 'Instansi Pemerintah'
+    title: 'Badan Pusat Statistik (BPS) Kab. Bekasi',
+    role: 'Design & Spatial Data Intern (Okt 2025 – Des 2025)',
+    desc: 'Pengolahan dan visualisasi data statistik daerah MATCHAPRO serta perancangan media diseminasi publik resmi.',
+    tag: '2025 • BPS'
   },
   {
     src: '/gallery/ahm.jpg',
     title: 'PT Astra Honda Motor (AHM)',
-    role: 'Quality Control Intern',
-    desc: 'Aktivitas inspeksi mutu komponen machining dan automasi rekapitulasi data QC menggunakan VBA.',
-    tag: 'Industri Otomotif'
+    role: 'Quality Control Intern (2024 / 2025)',
+    desc: 'Inspeksi kualitas komponen permesinan dan pengembangan otomasi rekapitulasi data QC dengan Excel VBA Macro.',
+    tag: '2024/2025 • Manufaktur Otomotif'
   },
   {
     src: '/gallery/bbvp.jpg',
     title: 'BBPVP Bekasi (Kemnaker RI)',
-    role: 'Sertifikasi BNSP',
-    desc: 'Pelatihan intensif IT Software Programming for Business dan uji kompetensi profesi nasional.',
-    tag: 'Sertifikasi BNSP'
-  },
-  {
-    src: '/gallery/foto pertama.jpg',
-    title: 'Dokumentasi & Portret Profesional',
-    role: 'Annisa Maulana Sabilla',
-    desc: 'Dedikasi dalam rekayasa sistem informasi, analisis data spasial, dan digitalisasi organisasi.',
-    tag: 'Profil'
+    role: 'IT Software Programming for Business (Mar 2022 – Jun 2022)',
+    desc: 'Pelatihan pemrograman bisnis intensif dan sertifikasi kompetensi profesi dari Badan Nasional Sertifikasi Profesi (BNSP).',
+    tag: '2022 • BNSP'
   }
 ]
 </script>
@@ -53,14 +59,14 @@ const galleryItems = [
         <span>{{ c.galleryMeta || 'Dokumentasi & Jejak Lapangan' }}</span>
       </span>
       <h2 id="gallery-heading" class="display-section">
-        {{ c.galleryTitle || 'Galeri Dokumentasi Aktivitas' }}
+        {{ c.galleryTitle || 'Galeri Aktivitas & Magang' }}
       </h2>
       <p class="text-[var(--ink-muted)] text-sm sm:text-base max-w-2xl mt-2 font-medium">
-        {{ c.gallerySubtitle || 'Momen dokumentasi kegiatan kerja praktik, magang industri di BUMN & manufaktur, serta pelatihan vokasi kompetensi.' }}
+        {{ c.gallerySubtitle || 'Momen dokumentasi kegiatan kerja praktik di BUMN, instansi pemerintah, manufaktur, dan pelatihan vokasi kompetensi.' }}
       </p>
     </div>
 
-    <!-- Gallery Grid -->
+    <!-- Gallery Grid (Item 0 = Foto Pertama di Grid Besar col-span-2) -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       <div
         v-for="(item, idx) in galleryItems"
@@ -71,7 +77,12 @@ const galleryItems = [
         ]"
       >
         <!-- Image Container -->
-        <div class="relative w-full aspect-video overflow-hidden bg-[var(--surface-subtle)] border-b-2 border-[var(--comic-border)]">
+        <div 
+          :class="[
+            'relative w-full overflow-hidden bg-[var(--surface-subtle)] border-b-2 border-[var(--comic-border)]',
+            idx === 0 ? 'aspect-[16/10] max-h-[420px]' : 'aspect-video'
+          ]"
+        >
           <img
             :src="item.src"
             :alt="item.title"
