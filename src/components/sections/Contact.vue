@@ -1,6 +1,6 @@
 <script setup>
 import { onMounted, onUnmounted, ref } from 'vue'
-import { Mail, Github, Linkedin, Copy, Check, Clock, Video, ArrowUpRight, Send, MessageCircle } from 'lucide-vue-next'
+import { Mail, Linkedin, Copy, Check, Clock, Video, ArrowUpRight, Send, MessageCircle } from 'lucide-vue-next'
 
 const props = defineProps({
   c: { type: Object, required: true },
@@ -172,25 +172,9 @@ onUnmounted(() => {
             <ArrowUpRight class="w-4 h-4 text-[var(--ink-muted)] shrink-0" />
           </a>
 
-          <!-- GitHub Profile -->
-          <a
-            :href="`https://${profile.contactActions.githubValue || 'annisamsabilla.netlify.app'}`"
-            target="_blank"
-            rel="noreferrer"
-            class="comic-panel p-3 bg-[var(--surface-panel)] border-[1.5px] border-[var(--comic-border)] hover:border-[var(--brand-coral)] flex items-center justify-between transition-all"
-          >
-            <div class="flex items-center gap-3">
-              <div class="w-8 h-8 rounded-lg bg-[var(--surface-subtle)] border border-[var(--comic-border)] flex items-center justify-center shrink-0 text-[var(--ink-primary)]">
-                <Github class="w-4 h-4" />
-              </div>
-              <span class="font-bold text-sm text-[var(--ink-primary)]">GitHub Profile (Annisa Maulana)</span>
-            </div>
-            <ArrowUpRight class="w-4 h-4 text-[var(--ink-muted)] shrink-0" />
-          </a>
-
           <!-- LinkedIn -->
           <a
-            href="https://linkedin.com/in/annisamaulanasabilla"
+            href="https://linkedin.com/in/annisa-maulana-sabilla/"
             target="_blank"
             rel="noreferrer"
             class="comic-panel p-3 bg-[var(--surface-panel)] border-[1.5px] border-[var(--comic-border)] hover:border-[var(--brand-coral)] flex items-center justify-between transition-all"

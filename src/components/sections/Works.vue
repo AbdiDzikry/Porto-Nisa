@@ -1,6 +1,6 @@
 <script setup>
 import { ref, onMounted } from 'vue'
-import { ArrowUpRight, List, LayoutGrid, FolderGit2, Github } from 'lucide-vue-next'
+import { ArrowUpRight, List, LayoutGrid, FolderGit2 } from 'lucide-vue-next'
 import gsap from 'gsap'
 
 const props = defineProps({
@@ -176,71 +176,6 @@ const onProjectLeave = () => {
           </span>
         </div>
       </div>
-
-      <!-- 6th Card (Grid Slot 6): More Projects on GitHub -->
-      <a
-        href="https://annisamsabilla.netlify.app"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="comic-panel p-5 sm:p-6 flex flex-col justify-between group bg-[var(--surface-panel)] border-[1.5px] border-dashed border-[var(--comic-border)] hover:border-solid hover:border-[var(--brand-coral)] transition-all cursor-pointer"
-        :aria-label="c.moreProjectsTitle || 'Explore more projects on GitHub'"
-      >
-        <div>
-          <!-- Thumbnail Frame / GitHub Graphic -->
-          <div class="w-full aspect-video rounded-xl overflow-hidden border-[1.5px] border-[var(--comic-border)] bg-[var(--surface-subtle)] mb-5 relative flex flex-col items-center justify-center p-6 text-center group-hover:bg-[var(--surface-sunken)] transition-colors">
-            <div class="w-14 h-14 rounded-2xl bg-[var(--surface-panel)] border-[1.5px] border-[var(--comic-border)] shadow-[2px_2px_0px_var(--comic-border)] flex items-center justify-center text-[var(--brand-coral)] mb-2 group-hover:scale-110 group-hover:rotate-[-4deg] transition-transform">
-              <Github class="w-7 h-7" />
-            </div>
-            <p class="font-mono text-xs font-bold text-[var(--ink-muted)]">annisamsabilla.netlify.app</p>
-
-            <!-- Corner Badge -->
-            <div class="absolute top-3 right-3">
-              <span class="font-mono text-xs font-bold px-2.5 py-1 rounded-md bg-[var(--brand-sun)] text-slate-950 border border-[var(--comic-border)] shadow-[1px_1px_0px_var(--comic-border)]">
-                Portfolio
-              </span>
-            </div>
-
-            <!-- Index Tag -->
-            <div class="absolute bottom-3 left-3">
-              <span class="font-mono text-[10px] font-bold px-2 py-0.5 rounded bg-[var(--brand-coral)] text-white border border-[var(--comic-border)]">
-                #MORE
-              </span>
-            </div>
-          </div>
-
-          <!-- Title & Action -->
-          <div class="flex items-start justify-between gap-4 mb-2">
-            <h3 class="text-xl sm:text-2xl font-black tracking-tight text-[var(--ink-primary)] group-hover:text-[var(--brand-coral)] transition-colors">
-              {{ c.moreProjectsTitle || 'Lihat Proyek Lainnya di GitHub' }}
-            </h3>
-            <div class="w-8 h-8 rounded-xl border border-[var(--comic-border)] bg-[var(--surface-panel)] flex items-center justify-center group-hover:bg-[var(--brand-coral)] group-hover:text-white shadow-[1px_1px_0px_var(--comic-border)] transition-all shrink-0">
-              <ArrowUpRight class="w-4 h-4" />
-            </div>
-          </div>
-
-          <!-- Role Label -->
-          <p class="font-mono text-xs font-bold text-[var(--brand-mint)] uppercase tracking-wider mb-3">
-            {{ c.moreProjectsRole || 'Open-Source & Code Sandbox' }}
-          </p>
-
-          <!-- Summary -->
-          <p class="text-xs sm:text-sm text-[var(--ink-muted)] leading-relaxed mb-6">
-            {{ c.moreProjectsSubtitle || 'Eksplorasi eksperimen kode, script automasi, library, dan modul open-source lainnya di profil GitHub saya.' }}
-          </p>
-        </div>
-
-        <!-- Tags / Action Link -->
-        <div class="pt-4 border-t border-[var(--comic-border)]/15 flex items-center justify-between">
-          <div class="flex flex-wrap gap-1.5">
-            <span class="comic-tag text-[10px] sm:text-[11px]">Git Repositories</span>
-            <span class="comic-tag text-[10px] sm:text-[11px]">Open Source</span>
-          </div>
-          <span class="font-mono text-xs font-bold text-[var(--brand-coral)] flex items-center gap-1 group-hover:underline">
-            {{ c.moreProjectsCta || 'Lihat Portfolio' }}
-            <ArrowUpRight class="w-3.5 h-3.5" />
-          </span>
-        </div>
-      </a>
     </div>
 
     <!-- 2. Clean List View -->
@@ -291,44 +226,6 @@ const onProjectLeave = () => {
           </div>
         </div>
       </div>
-
-      <!-- List View: More on GitHub Row -->
-      <a
-        href="https://annisamsabilla.netlify.app"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="comic-panel p-5 sm:p-6 bg-[var(--surface-panel)] border-[1.5px] border-dashed border-[var(--comic-border)] hover:border-solid hover:border-[var(--brand-coral)] transition-all group block"
-        @mouseenter="onProjectEnter($event, 'more')"
-        @mouseleave="onProjectLeave"
-        :aria-label="c.moreProjectsTitle || 'Explore more projects on GitHub'"
-      >
-        <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-          <div class="flex items-center gap-4 sm:gap-6">
-            <span class="font-mono text-sm sm:text-base font-black px-2.5 py-1 rounded bg-[var(--brand-coral)] text-white border border-[var(--comic-border)] shadow-[1px_1px_0px_var(--comic-border)]">
-              #MORE
-            </span>
-            <div>
-              <div class="flex items-center gap-2">
-                <Github class="w-4 h-4 text-[var(--brand-coral)] shrink-0" />
-                <h3 class="text-xl sm:text-2xl md:text-3xl font-black text-[var(--ink-primary)] group-hover:text-[var(--brand-coral)] transition-colors">
-                  {{ c.moreProjectsTitle || 'Lihat Proyek Lainnya di GitHub' }}
-                </h3>
-              </div>
-              <p class="text-xs text-[var(--ink-muted)] font-medium mt-0.5">{{ c.moreProjectsListMeta || 'annisamsabilla.netlify.app • Portfolioitori Publik & Eksperimen' }}</p>
-            </div>
-          </div>
-          
-          <div class="flex items-center gap-4 self-end md:self-center">
-            <div class="flex flex-wrap gap-1 hidden sm:flex">
-              <span class="comic-tag text-[10px]">Open Source</span>
-              <span class="comic-tag text-[10px]">Portfolio</span>
-            </div>
-            <div class="w-9 h-9 rounded-xl border border-[var(--comic-border)] bg-[var(--surface-panel)] flex items-center justify-center group-hover:bg-[var(--brand-coral)] group-hover:text-white shadow-[1px_1px_0px_var(--comic-border)] transition-all">
-              <ArrowUpRight class="w-4 h-4" aria-hidden="true" />
-            </div>
-          </div>
-        </div>
-      </a>
     </div>
 
     <!-- Floating Comic Image Reveal (for List View) -->
@@ -358,18 +255,6 @@ const onProjectLeave = () => {
           <p class="font-black text-base text-[var(--ink-primary)] tracking-tight">{{ project.title }}</p>
           <span class="font-mono text-xs font-bold text-[var(--brand-mint)] mt-0.5">{{ project.role }}</span>
         </div>
-      </div>
-
-      <!-- More Projects Floating Preview -->
-      <div 
-        class="absolute inset-0 w-full h-full transition-opacity duration-300 ease-in-out flex flex-col items-center justify-center bg-[var(--surface-panel)] p-6 text-center"
-        :class="hoveredProjectIndex === 'more' ? 'opacity-100 z-10' : 'opacity-0 z-0 pointer-events-none'"
-      >
-        <div class="w-16 h-16 rounded-2xl bg-[var(--surface-subtle)] border-2 border-[var(--comic-border)] flex items-center justify-center text-[var(--brand-coral)] mb-3 shadow-[2px_2px_0px_var(--comic-border)]">
-          <Github class="w-8 h-8" />
-        </div>
-        <p class="font-black text-base text-[var(--ink-primary)]">annisamsabilla.netlify.app</p>
-        <p class="font-mono text-xs font-bold text-[var(--ink-muted)] mt-1">{{ c.moreProjectsPreviewSub || 'Portfolioitories & Experiments ↗' }}</p>
       </div>
     </div>
   </section>

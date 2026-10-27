@@ -3,7 +3,7 @@ export const copy = {
     skip: 'Lewati ke konten utama',
     issue: 'Log Digitalisasi & Rekayasa Data',
     eyebrow: 'Marine Information Systems & Spatial Web Specialist',
-    coverHeadline: ['Annisa Maulana;', 'Marine Information Systems & Spatial Web Specialist'],
+    coverHeadline: ['Annisa Maulana Sabilla;', 'Marine Information Systems & Spatial Web Specialist'],
     coverBody:
       'Lulusan Sistem Informasi Kelautan UPI dengan pengalaman di bidang analisis data spasial (GIS), digitalisasi kearsipan BUMN di PT Pelindo (Persero), otomasi data QC di PT Astra Honda Motor, serta rekayasa aplikasi web modern (React.js & Leaflet).',
     ctaView: 'Lihat Proyek Saya',
@@ -37,7 +37,7 @@ export const copy = {
     aboutBodyP1:
       'Saya adalah lulusan Sistem Informasi Kelautan dari Universitas Pendidikan Indonesia (UPI) dengan fondasi rekayasa perangkat lunak dari SMK RPL. Fokus keahlian saya berakar pada pengolahan data spasial (GIS), digitalisasi sistem kearsipan & HRIS korporat, serta pembangunan aplikasi web interaktif yang menyajikan data kompleks menjadi visualisasi intuitif.',
     aboutBodyP2:
-      'Tersertifikasi kompetensi IT Software Programming for Business oleh BNSP serta berpengalaman magang di BUMN (PT Pelindo), BPS Kabupaten Bekasi, PT Astra Honda Motor (Quality Control), dan PT Supernova. Terbiasa memadukan pemikiran analitis, otomatisasi spreadsheet/VBA, dan pengembangan frontend modern.',
+      'Tersertifikasi kompetensi IT Software Programming for Business oleh BNSP serta berpengalaman magang di BUMN PT Pelabuhan Indonesia (Persero)—mengklasifikasikan 1.027 box arsip, 1.979 map, 9.164 folder, dan menyelesaikan 95.748 entri data arsip digital—serta di BPS Kabupaten Bekasi, PT Astra Honda Motor (Quality Control), dan PT Supernova. Terbiasa memadukan pemikiran analitis, otomatisasi spreadsheet/VBA, dan rekayasa web modern.',
     aboutPullQuote: '“Solusi digital terbaik adalah yang mampu mengubah data kompleks menjadi visualisasi yang mudah dipahami dan memberi manfaat nyata bagi masyarakat.”',
     
     highlightsTitle: 'Sekilas Tentang Saya',
@@ -137,7 +137,7 @@ export const copy = {
     skip: 'Skip to main content',
     issue: 'Data Engineering & Digitalization Log',
     eyebrow: 'Marine Information Systems & Spatial Web Specialist',
-    coverHeadline: ['Annisa Maulana;', 'Marine Information Systems & Spatial Web Specialist'],
+    coverHeadline: ['Annisa Maulana Sabilla;', 'Marine Information Systems & Spatial Web Specialist'],
     coverBody:
       'Marine Information Systems graduate from Universitas Pendidikan Indonesia (UPI) specializing in spatial data engineering (GIS), corporate digital archiving at PT Pelindo (Persero), QC data automation at PT Astra Honda Motor, and modern web application development.',
     ctaView: 'Explore Projects',
@@ -171,7 +171,7 @@ export const copy = {
     aboutBodyP1:
       'I hold a Bachelor of Science in Marine Information Systems from Universitas Pendidikan Indonesia (UPI) with a secondary school foundation in Software Engineering (RPL). My core competencies center on spatial data analytics (GIS), enterprise digital archiving and HRIS governance, and modern web application development that translates complex datasets into intuitive visualizations.',
     aboutBodyP2:
-      'Certified in IT Software Programming for Business by the National Professional Certification Board (BNSP), with practical internship experience across state-owned port logistics (PT Pelindo), regional statistics (BPS), automotive quality control (PT Astra Honda Motor), and flexible packaging (PT Supernova). Experienced in uniting analytical reasoning, VBA automation, and modern frontend tools.',
+      'Certified in IT Software Programming for Business by BNSP, with internship experience at state-owned enterprise PT Pelabuhan Indonesia (Persero)—classifying 1,027 archive boxes, 1,979 document maps, 9,164 folders, and executing 95,748 digital records entries—as well as regional statistics (BPS), automotive quality control (PT Astra Honda Motor), and PT Supernova. Skilled in data analytics, VBA automation, and modern web development.',
     aboutPullQuote: '“The best digital solutions transform complex spatial datasets into intuitive visualizations that create tangible public value.”',
     
     highlightsTitle: 'Quick Highlights',

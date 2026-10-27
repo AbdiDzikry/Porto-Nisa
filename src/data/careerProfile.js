@@ -14,14 +14,14 @@ const careerProfileSource = {
       emailLabel: 'Email',
       emailValue: 'annisa.m.sabilla@gmail.com',
       linkedinLabel: 'LinkedIn',
-      linkedinValue: 'linkedin.com/in/annisamaulanasabilla',
-      githubLabel: 'Portofolio Online',
-      githubValue: 'annisamsabilla.netlify.app',
-      githubUrl: 'https://annisamsabilla.netlify.app',
+      linkedinValue: 'linkedin.com/in/annisa-maulana-sabilla',
+      githubLabel: 'Website Portfolio',
+      githubValue: 'website-annisa.vercel.app',
+      githubUrl: 'https://website-annisa.vercel.app/',
       meetingLabel: 'Kirim Email Langsung',
       meetingValue: 'annisa.m.sabilla@gmail.com',
       meetingUrl: 'mailto:annisa.m.sabilla@gmail.com',
-      portfolioValue: 'annisamsabilla.netlify.app'
+      portfolioValue: 'website-annisa.vercel.app'
     },
     timelineLabel: 'Pengalaman Kerja & Magang',
     timelineItems: [
@@ -30,9 +30,9 @@ const careerProfileSource = {
         title: 'Archive & HRIS Administration Intern (Magenta BUMN)',
         role: 'PT Pelabuhan Indonesia (Persero)',
         description:
-          'Ditempatkan di Departemen Manajemen Kearsipan, HRIS, dan Administrasi SDM. Bertanggung jawab atas verifikasi, digitalisasi, dan klasifikasi sistematis 1.000+ dokumen arsip inaktif perusahaan sesuai regulasi retensi BUMN.',
+          'Ditempatkan di Departemen Manajemen Kearsipan, HRIS, dan Administrasi SDM. Mengklasifikasikan dan mengatur 1.027 box arsip, 1.979 map, dan 9.164 folder dokumen, serta menyelesaikan 95.748 entri data arsip digital dengan 558 box dan 1.972 folder.',
         technologies: ['HRIS', 'Document Management', 'Digital Archiving', 'Data Verification'],
-        impact: 'Tertatanya 1.000+ Arsip Digital & Efisiensi Pencarian Dokumen SDM'
+        impact: '95.748 Entri Data Arsip & 1.027 Box Dokumen Tertata'
       },
       {
         period: 'Okt. 2025 – Des. 2025',
@@ -112,14 +112,14 @@ const careerProfileSource = {
       emailLabel: 'Email',
       emailValue: 'annisa.m.sabilla@gmail.com',
       linkedinLabel: 'LinkedIn',
-      linkedinValue: 'linkedin.com/in/annisamaulanasabilla',
-      githubLabel: 'Online Portfolio',
-      githubValue: 'annisamsabilla.netlify.app',
-      githubUrl: 'https://annisamsabilla.netlify.app',
+      linkedinValue: 'linkedin.com/in/annisa-maulana-sabilla',
+      githubLabel: 'Website Portfolio',
+      githubValue: 'website-annisa.vercel.app',
+      githubUrl: 'https://website-annisa.vercel.app/',
       meetingLabel: 'Send Direct Inquiry',
       meetingValue: 'annisa.m.sabilla@gmail.com',
       meetingUrl: 'mailto:annisa.m.sabilla@gmail.com',
-      portfolioValue: 'annisamsabilla.netlify.app'
+      portfolioValue: 'website-annisa.vercel.app'
     },
     timelineLabel: 'Work & Internship Experience',
     timelineItems: [
@@ -128,9 +128,9 @@ const careerProfileSource = {
         title: 'Archive & HRIS Administration Intern (Magenta BUMN)',
         role: 'PT Pelabuhan Indonesia (Persero)',
         description:
-          'Stationed in Archival Management, HRIS, and HR Administration. Spearheaded verification, indexing, and digital governance for 1,000+ inactive corporate documents under state enterprise retention standards.',
+          'Stationed in Archival Management, HRIS, and HR Administration. Classified and organized 1,027 archive boxes, 1,979 document maps, and 9,164 folders, successfully executing 95,748 digital records entries across 558 boxes and 1,972 folders.',
         technologies: ['HRIS', 'Document Management', 'Digital Archiving', 'Data Verification'],
-        impact: 'Restructured 1,000+ Corporate Records & Accelerated HR Retrieval'
+        impact: '95,748 Digital Record Entries & 1,027 Boxes Organized'
       },
       {
         period: 'Oct. 2025 – Dec. 2025',
