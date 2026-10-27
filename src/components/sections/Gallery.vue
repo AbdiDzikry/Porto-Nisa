@@ -6,18 +6,18 @@ defineProps({
 })
 
 // Urutan dari yang paling baru:
-// 1. Dokumentasi Profil Profesional (Foto Utama / Terkini) -> Grid Besar
+// 1. Dokumentasi Profil Profesional
 // 2. PT Pelabuhan Indonesia (Persero) (Jan 2026 - Agu 2026)
 // 3. Badan Pusat Statistik / BPS (Okt 2025 - Des 2025)
 // 4. PT Astra Honda Motor / AHM (2024 / 2025)
 // 5. BBPVP Bekasi - Pelatihan & Uji BNSP (Mar 2022 - Jun 2022)
 const galleryItems = [
   {
-    src: '/gallery/foto pertama.jpg',
+    src: '/gallery/avatar-annisa.jpg',
     title: 'Annisa Maulana Sabilla',
-    role: 'Information Systems, HRIS & Spatial Data Specialist',
-    desc: 'Portret profesional dan dokumentasi dedikasi dalam tata kelola sistem informasi, administrasi kearsipan digital, dan analisis spasial.',
-    tag: 'Foto Utama'
+    role: 'Information Systems & HRIS Specialist',
+    desc: 'Portret profesional dan dedikasi dalam tata kelola sistem informasi, administrasi kearsipan digital, dan analisis spasial.',
+    tag: 'Dokumentasi Utama'
   },
   {
     src: '/gallery/pelind0.jpg',
@@ -66,23 +66,15 @@ const galleryItems = [
       </p>
     </div>
 
-    <!-- Gallery Grid (Item 0 = Foto Pertama di Grid Besar col-span-2) -->
+    <!-- Gallery Grid: Proporsional & Seragam 3 Kolom (Tidak Ada yang Terlalu Lebar) -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       <div
         v-for="(item, idx) in galleryItems"
         :key="idx"
-        :class="[
-          'comic-panel bg-[var(--surface-panel)] border-2 border-[var(--comic-border)] shadow-comic overflow-hidden flex flex-col group hover:-translate-y-1 transition-all',
-          idx === 0 ? 'md:col-span-2 lg:col-span-2' : ''
-        ]"
+        class="comic-panel bg-[var(--surface-panel)] border-2 border-[var(--comic-border)] shadow-comic overflow-hidden flex flex-col group hover:-translate-y-1 transition-all"
       >
         <!-- Image Container -->
-        <div 
-          :class="[
-            'relative w-full overflow-hidden bg-[var(--surface-subtle)] border-b-2 border-[var(--comic-border)]',
-            idx === 0 ? 'aspect-[16/10] max-h-[420px]' : 'aspect-video'
-          ]"
-        >
+        <div class="relative w-full aspect-video overflow-hidden bg-[var(--surface-subtle)] border-b-2 border-[var(--comic-border)]">
           <img
             :src="item.src"
             :alt="item.title"

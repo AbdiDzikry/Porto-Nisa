@@ -82,7 +82,7 @@ const emit = defineEmits(['goToSection'])
               <!-- Avatar Illustration / Photo Container -->
               <div class="w-full aspect-[4/4.5] rounded-xl overflow-hidden border-[1.5px] border-[var(--comic-border)] bg-[var(--surface-subtle)] relative mb-3">
                 <img
-                  src="/profile/foto pertama.jpg"
+                  src="/profile/avatar-annisa.jpg"
                   alt="Annisa Maulana Sabilla"
                   class="w-full h-full object-cover"
                   fetchpriority="high"
