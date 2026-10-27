@@ -133,6 +133,28 @@
     --shadow-hard: #2A3D36;
     --selection-bg: #84A59D;
     --selection-text: #FFFFFF;
+    --shadow-comic: 2.5px 2.5px 0px #2A3D36;
+    --shadow-comic-lg: 4px 4px 0px #2A3D36;
+    --shadow-comic-hover: 3.5px 3.5px 0px #2A3D36;
+    --shadow-btn: 2px 2px 0px #2A3D36;
+    --shadow-card: 3px 3px 0px #2A3D36;
+    --focus-ring: #84A59D;
+    color-scheme: light;
+  }
+
+  /* Traditional Korean Hanji Paper / Aesthetic pattern overlay on Matcha Theme */
+  [data-theme="rose"] body {
+    background-image: 
+      radial-gradient(circle at 100% 0%, rgba(132, 165, 157, 0.08) 0%, transparent 25%),
+      radial-gradient(circle at 0% 100%, rgba(217, 119, 127, 0.06) 0%, transparent 20%),
+      radial-gradient(rgba(42, 61, 54, 0.035) 1px, transparent 1px);
+    background-size: 100% 100%, 100% 100%, 24px 24px;
+    background-attachment: fixed;
+  }
+
+  [data-theme="rose"] .comic-chapter-badge {
+    border-radius: 9999px;
+    letter-spacing: 0.08em;
   }
   /* ========================================================================
      THEME 3: MEMPHIS (Memphis Energy + Neo-Brutalism + Retro Pop)

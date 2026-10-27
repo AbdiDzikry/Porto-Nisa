@@ -18,6 +18,7 @@ import Contact from './components/sections/Contact.vue'
 import Footer from './components/layout/Footer.vue'
 import SpecDrawer from './components/ui/SpecDrawer.vue'
 import CommandPalette from './components/ui/CommandPalette.vue'
+import KoreanOrnaments from './components/ui/KoreanOrnaments.vue'
 import { copy } from './data/locales.js'
 
 gsap.registerPlugin(ScrollTrigger)
@@ -304,6 +305,8 @@ watch(lang, () => {
     @applyTheme="applyTheme"
     @toggleLang="toggleLang"
   />
+  <!-- Korean Aesthetic Ornaments for Matcha Theme -->
+  <KoreanOrnaments />
 </template>
 
 <style>
