@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
   <meta charset="UTF-8" />
@@ -7,85 +7,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fcfbf7" />
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#12131c" />
-  <title>Sulthan Abdi Dzikry — Full-Stack & Agentic Systems Engineer</title>
-  <meta name="description" content="Sulthan Abdi Dzikry — Full-Stack & Agentic Systems Engineer. Creator of @ryuenn3123/agentic-senior-core (adopted by 20+ AI coding tools). Building production-grade web systems, ERP integrations, and resilient architectures." />
+  <title>Portfolio | Annisa MS</title>
+  <meta name="description" content="Portfolio Annisa Maulana Sabilla — Information Systems, HRIS & Spatial Data Specialist. Portofolio digitalisasi sistem, manajemen kearsipan korporat, WebGIS, dan analisis data." />
 
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://sulthanabdi.dev/" />
-  <meta property="og:title" content="Sulthan Abdi Dzikry — Full-Stack & Agentic Systems Engineer" />
-  <meta property="og:description" content="Full-Stack & Agentic Systems Engineer. Creator of @ryuenn3123/agentic-senior-core (adopted by 20+ AI coding tools). Production web systems and resilient architecture." />
-  <meta property="og:image" content="https://sulthanabdi.dev/og-image.jpg" />
+  <meta property="og:url" content="https://website-annisa.vercel.app/" />
+  <meta property="og:title" content="Portfolio | Annisa MS" />
+  <meta property="og:description" content="Portfolio Annisa Maulana Sabilla — Information Systems, HRIS & Spatial Data Specialist." />
+  <meta property="og:image" content="https://website-annisa.vercel.app/profile/avatar-annisa.jpg" />
 
   <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://sulthanabdi.dev/" />
-  <meta property="twitter:title" content="Sulthan Abdi Dzikry — Full-Stack & Agentic Systems Engineer" />
-  <meta property="twitter:description" content="Full-Stack & Agentic Systems Engineer. Creator of @ryuenn3123/agentic-senior-core (adopted by 20+ AI coding tools). Production web systems and resilient architecture." />
-  <meta property="twitter:image" content="https://sulthanabdi.dev/og-image.jpg" />
+  <meta property="twitter:url" content="https://website-annisa.vercel.app/" />
+  <meta property="twitter:title" content="Portfolio | Annisa MS" />
+  <meta property="twitter:description" content="Portfolio Annisa Maulana Sabilla — Information Systems, HRIS & Spatial Data Specialist." />
+  <meta property="twitter:image" content="https://website-annisa.vercel.app/profile/avatar-annisa.jpg" />
 
   <!-- Schema.org JSON-LD Structured Data for Google Search Rich Snippet -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
-    "name": "Sulthan Abdi Dzikry",
-    "url": "https://sulthanabdi.dev",
-    "image": "https://sulthanabdi.dev/avatar-github.jpg",
-    "jobTitle": "Full-Stack & Agentic Systems Engineer",
+    "name": "Annisa Maulana Sabilla",
+    "url": "https://website-annisa.vercel.app",
+    "image": "https://website-annisa.vercel.app/profile/avatar-annisa.jpg",
+    "jobTitle": "Information Systems, HRIS & Spatial Data Specialist",
     "alumniOf": {
       "@type": "CollegeOrUniversity",
-      "name": "Telkom University"
+      "name": "Universitas Pendidikan Indonesia"
     },
     "sameAs": [
-      "https://github.com/AbdiDzikry",
-      "https://linkedin.com/in/sulthan-abdi-dzikry",
-      "https://www.npmjs.com/package/@ryuenn3123/agentic-senior-core"
+      "https://www.linkedin.com/in/annisa-maulana-sabilla/"
     ],
     "knowsAbout": [
-      "TypeScript",
+      "Human Resource Information System (HRIS)",
+      "Corporate Archival Management",
+      "WebGIS",
       "Vue.js",
-      "Next.js",
-      "NestJS",
-      "Golang",
-      "PostgreSQL",
-      "Docker",
-      "AI Coding Agents",
-      "Agentic Architecture"
+      "Python",
+      "Leaflet",
+      "Data Visualization",
+      "SQL"
     ]
   }
   </script>
 
-  
-  <link rel="dns-prefetch" href="https://api.web3forms.com" />
-
-  <script>
-    // No-flash theme bootstrap. Reads localStorage.portfolio-theme and writes
-    // data-theme on <html> before paint so the saved palette never flashes default.
-    (function () {
-      try {
-        var saved = localStorage.getItem('portfolio-theme');
-        var palettes = ['soft', 'soft', 'memphis', 'mono'];
-        var pref = palettes.indexOf(saved) >= 0
-          ? saved
-          : (saved === 'light' || saved === 'dark' || saved === 'auto' ? saved : 'soft');
-        var resolved = pref === 'auto'
-          ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
-          : pref;
-        document.documentElement.setAttribute('data-theme', resolved);
-        document.documentElement.setAttribute('data-theme-pref', pref);
-      } catch (_) {
-        document.documentElement.setAttribute('data-theme', 'soft');
-        document.documentElement.setAttribute('data-theme-pref', 'soft');
-      }
-    })();
-  </script>
+  <!-- Typography: JetBrains Mono + Inter + Fraunces Variable Fonts (Self-Hosted) -->
+  <link rel="stylesheet" href="/src/style.css" />
 </head>
 
-<body>
+<body class="selection:bg-[var(--brand-mint)] selection:text-slate-950">
   <div id="app"></div>
   <script type="module" src="/src/main.js"></script>
 </body>
 
 </html>
-
-
-
