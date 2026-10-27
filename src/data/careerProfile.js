@@ -26,7 +26,7 @@ const careerProfileSource = {
     timelineLabel: 'Pengalaman Kerja & Magang',
     timelineItems: [
       {
-        period: 'Jan. 2026 – Agu. 2026',
+        period: 'Jan. 2026 – Okt. 2026',
         title: 'Archive & HRIS Administration Intern (Magenta BUMN)',
         role: 'PT Pelabuhan Indonesia (Persero)',
         description:
@@ -124,7 +124,7 @@ const careerProfileSource = {
     timelineLabel: 'Work & Internship Experience',
     timelineItems: [
       {
-        period: 'Jan. 2026 – Aug. 2026',
+        period: 'Jan. 2026 – Oct. 2026',
         title: 'Archive & HRIS Administration Intern (Magenta BUMN)',
         role: 'PT Pelabuhan Indonesia (Persero)',
         description:

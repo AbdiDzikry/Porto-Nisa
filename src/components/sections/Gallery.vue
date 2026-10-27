@@ -8,7 +8,7 @@ defineProps({
 
 // Urutan dari yang paling baru:
 // 1. Dokumentasi Profil Profesional
-// 2. PT Pelabuhan Indonesia (Persero) (Jan 2026 - Agu 2026)
+// 2. PT Pelabuhan Indonesia (Persero) (Jan 2026 - Okt 2026)
 // 3. Badan Pusat Statistik / BPS (Okt 2025 - Des 2025)
 // 4. PT Astra Honda Motor / AHM (2024 / 2025)
 // 5. BBPVP Bekasi - Pelatihan & Uji BNSP (Mar 2022 - Jun 2022)
@@ -23,7 +23,7 @@ const galleryItems = [
   {
     src: '/gallery/pelind0.jpg',
     title: 'PT Pelabuhan Indonesia (Persero)',
-    role: 'Archive & HRIS Intern (Jan 2026 – Agu 2026)',
+    role: 'Archive & HRIS Intern (Jan 2026 – Okt 2026)',
     desc: 'Penataan 1.027 box arsip, 1.979 map, 9.164 folder dokumen inaktif, dan penyelesaian 95.748 entri arsip kepegawaian digital.',
     tag: '2026 • BUMN Pelindo'
   },
