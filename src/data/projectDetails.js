@@ -141,6 +141,46 @@ const annisaProjectDetails = {
         'Integrasi pembayaran online payment gateway (QRIS/Virtual Account)'
       ]
     }
+  },
+  'pulau-merak': {
+    code: 'pulau-merak',
+    number: '05',
+    title: 'Sistem Analisis Sentimen Wisatawan Pulau Merak',
+    tagline: 'Sistem web berbasis Flask yang mengklasifikasikan ulasan Google Maps dengan Complement Naïve Bayes dan menyajikannya dalam dashboard interaktif untuk pengelolaan wisata pesisir',
+    client: 'Riset Analisis Sentimen & Tata Kelola Wisata Pesisir Pulau Merak',
+    period: '2025',
+    status: 'Sistem Teruji & Siap Produksi',
+    accentColor: 'mint',
+    screenshot: '/projects/pulau-merak-1.jpg',
+    secondaryScreenshot: '/projects/pulau-merak-2.jpg',
+    executiveSummary: 'Sistem Analisis Sentimen Wisatawan Pulau Merak adalah platform web berbasis Python Flask yang dirancang untuk mengolah, menganalisis, dan memetakan opini publik dari ulasan Google Maps. Menggunakan algoritma pemrosesan bahasa alami (NLP) dengan pembobotan TF-IDF dan model klasifikasi Complement Naïve Bayes (disimpan menggunakan Joblib), sistem mengidentifikasi kepuasan pengunjung pesisir secara otomatis. Informasi sentimen disajikan ke dalam 6 komponen visualisasi dashboard interaktif yang mendukung 2 peran pengguna (Guest & Admin) demi efektivitas strategi pariwisata bahari.',
+    achievements: [
+      { label: 'Model Machine Learning', value: 'Complement Naïve Bayes', desc: 'Klasifikasi akurat sentimen ulasan teks bahasa alami' },
+      { label: 'Visualisasi Data', value: '6 Komponen Dashboard', desc: 'Grafik interaktif tren, rasio sentimen, dan metrik kepuasan' },
+      { label: 'Manajemen Hak Akses', value: '2 Peran Pengguna', desc: 'Akses publik Guest dan kendali penuh data bagi Admin' }
+    ],
+    techStack: [
+      { name: 'Backend Framework', tech: 'Python & Flask' },
+      { name: 'Machine Learning', tech: 'Complement Naïve Bayes & Joblib' },
+      { name: 'Text Mining / NLP', tech: 'TF-IDF Vectorizer & Preprocessing' },
+      { name: 'Database', tech: 'PostgreSQL' },
+      { name: 'Frontend Interface', tech: 'HTML5, CSS3 & JavaScript' },
+      { name: 'Data Visualization', tech: 'Interactive Chart & Graph Modules' }
+    ],
+    scope: {
+      inScope: [
+        'Sistem otentikasi 2 peran pengguna (Guest untuk eksplorasi publik & Admin untuk manajemen dataset)',
+        'Pipeline Natural Language Processing (case folding, tokenizing, filtering/stopword removal, stemming)',
+        'Ekstraksi fitur kata dengan TF-IDF (Term Frequency-Inverse Document Frequency)',
+        'Model prediksi Complement Naïve Bayes yang di-serialize dan di-load secara cepat via Joblib',
+        '6 komponen visualisasi dashboard interaktif (ringkasan statistik, diagram rasio sentimen positif/negatif, grafik tren waktu, word frequency/cloud, tabel distribusi kategori, dan detail ulasan)',
+        'Penyimpanan database relasional PostgreSQL terstruktur untuk riwayat data ulasan Google Maps'
+      ],
+      outOfScope: [
+        'Scraping otomatis berkala secara real-time langsung ke Google Maps API tanpa autentikasi manual',
+        'Model multi-bahasa asing di luar Bahasa Indonesia'
+      ]
+    }
   }
 }
 

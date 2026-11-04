@@ -214,6 +214,62 @@ const projectSource = [
       }
     },
     tags: ['VB.NET', 'MySQL', 'Crystal Reports', 'Database Design', 'Desktop App', 'ODBC']
+  },
+  {
+    title: 'Sistem Analisis Sentimen Wisatawan Pulau Merak',
+    year: '2025',
+    plateCode: 'PR.0525',
+    type: 'featured',
+    accent: 'mint',
+    link: '/brief-detail/?id=pulau-merak',
+    liveUrl: '/brief-detail/?id=pulau-merak',
+    detailUrl: '/brief-detail/?id=pulau-merak',
+    screenshot: '/projects/pulau-merak-1.jpg',
+    role: {
+      id: 'Full-Stack Developer & NLP / Data Engineer',
+      en: 'Full-Stack Developer & NLP / Data Engineer'
+    },
+    summary: {
+      id: 'Sistem web berbasis Flask yang mengklasifikasikan ulasan Google Maps dengan Complement Naïve Bayes dan menyajikannya dalam dashboard interaktif untuk pengelolaan wisata pesisir Pulau Merak. Dilengkapi otentikasi 2 peran (Guest & Admin) serta 6 komponen visualisasi analitis interaktif.',
+      en: 'Flask-based web intelligence platform classifying Google Maps tourist reviews using Complement Naïve Bayes and serving interactive coastal tourism management dashboards. Features 2 user roles (Guest & Admin) and 6 analytics visualization components.'
+    },
+    keyPoints: {
+      id: [
+        'Otentikasi 2 Peran Pengguna: Akses Guest & Dashboard Manajemen Admin',
+        'Pipeline NLP & Machine Learning: Text Preprocessing, TF-IDF Vectorizer, & Complement Naïve Bayes model via Joblib',
+        '6 Komponen Visualisasi Dashboard Interaktif untuk monitoring tren kepuasan dan sentimen ulasan pesisir',
+        'Penyimpanan terstruktur dan pengelolaan data ulasan berbasis PostgreSQL'
+      ],
+      en: [
+        '2 User Role Authentication: Public Guest access & secure Admin Management',
+        'NLP & Machine Learning Pipeline: Preprocessing, TF-IDF Vectorizer, & Complement Naïve Bayes via Joblib',
+        '6 Dynamic Visualization Components tracking tourist sentiment metrics and review trends',
+        'Scalable relational data storage and sentiment archiving with PostgreSQL'
+      ]
+    },
+    caseStudy: {
+      id: {
+        constraint: 'Pengelola wisata pesisir Pulau Merak kesulitan mengolah ratusan ulasan teks bebas di Google Maps secara manual untuk mengevaluasi kepuasan wisatawan dan fasilitas destinasi.',
+        decision: 'Membangun platform analitis berbasis Python Flask dengan klasifikasi NLP Complement Naïve Bayes, pembobotan TF-IDF, database PostgreSQL, serta dashboard analitik visual 6 komponen.',
+        outcome: 'Memberikan wawasan sentimen akurat secara real-time, mengotomatisasi klasifikasi ulasan positif/negatif, dan memfasilitasi pengambilan keputusan strategis wisata pesisir.'
+      },
+      en: {
+        constraint: 'Coastal tourism managers at Merak Island faced difficulties analyzing large volumes of unstructured Google Maps reviews manually to evaluate tourist satisfaction.',
+        decision: 'Engineered a Python Flask web system combining Complement Naïve Bayes NLP, TF-IDF weighting, PostgreSQL storage, and a 6-component interactive analytical dashboard.',
+        outcome: 'Automated sentiment classification into positive/negative feedback, delivering actionable real-time insights for coastal destination management.'
+      }
+    },
+    preview: {
+      id: {
+        eyebrow: 'NLP & Sistem Analitik Web',
+        headline: 'Klasifikasi sentimen ulasan wisata pesisir berbasis Complement Naïve Bayes & Flask.'
+      },
+      en: {
+        eyebrow: 'NLP & Web Analytics System',
+        headline: 'Coastal tourist review sentiment classification with Complement Naïve Bayes & Flask.'
+      }
+    },
+    tags: ['Python', 'Flask', 'PostgreSQL', 'NLP', 'TF-IDF', 'Naive Bayes', 'Joblib', 'CSS', 'JavaScript']
   }
 ]
 

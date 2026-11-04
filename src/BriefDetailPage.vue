@@ -169,7 +169,23 @@ onUnmounted(() => {
         </p>
 
         <!-- Screenshot Preview -->
-        <div class="w-full rounded-2xl overflow-hidden border-2 border-[var(--comic-border)] shadow-comic bg-[var(--surface-subtle)] mb-8 aspect-video max-h-[460px]">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8" v-if="currentProject.secondaryScreenshot">
+          <div class="rounded-2xl overflow-hidden border-2 border-[var(--comic-border)] shadow-comic bg-[var(--surface-subtle)] aspect-video">
+            <img
+              :src="currentProject.screenshot"
+              :alt="currentProject.title + ' Dashboard'"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="rounded-2xl overflow-hidden border-2 border-[var(--comic-border)] shadow-comic bg-[var(--surface-subtle)] aspect-video">
+            <img
+              :src="currentProject.secondaryScreenshot"
+              :alt="currentProject.title + ' Visualisasi'"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+        <div v-else class="w-full rounded-2xl overflow-hidden border-2 border-[var(--comic-border)] shadow-comic bg-[var(--surface-subtle)] mb-8 aspect-video max-h-[460px]">
           <img
             :src="currentProject.screenshot"
             :alt="currentProject.title"
